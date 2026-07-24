@@ -1,0 +1,32 @@
+$linkPaddingY: 4px;
+$linkPaddingX: 8px;
+
+.breadcrumb {
+  @apply relative z-3 p-2 cursor-text select-text;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 16px;
+
+  p {
+    @apply max-w-[200px] block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &.active {
+    @apply cursor-pointer;
+  }
+
+  &.active:hover {
+    background-color: var(--hover);
+  }
+
+
+  &.active:hover:not(:focus, :disabled):after {
+  }
+
+  &.active:focus:after {
+    @apply border-2 ;
+  }
+}

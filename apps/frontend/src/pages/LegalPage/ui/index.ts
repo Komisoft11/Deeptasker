@@ -1,0 +1,5 @@
+export { ConsentPage } from './ConsentPage/ConsentPage'
+export { PersonalDataPolicyPage } from './PersonalDataPolicyPage/PersonalDataPolicyPage'
+export { PrivacyPolicyPage } from './PrivacyPolicyPage/PrivacyPolicyPage'
+export { TermsOfUsePage } from './TermsOfUsePage/TermsOfUsePage'
+export { UserAgreementPage } from './UserAgreementPage/UserAgreementPage'

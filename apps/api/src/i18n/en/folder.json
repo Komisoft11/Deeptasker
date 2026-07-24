@@ -1,0 +1,6 @@
+{
+  "not_found": "Folder {{id}} not found",
+  "title_exist": "Title already exists",
+  "default_name": "New folder",
+  "forbidden": "No access to folders"
+}

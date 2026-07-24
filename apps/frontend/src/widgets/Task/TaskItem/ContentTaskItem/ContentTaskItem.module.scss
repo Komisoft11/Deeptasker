@@ -1,0 +1,39 @@
+
+.label {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--hover);
+}
+
+.input {
+  font-size: 14px;
+  line-height: 16px;
+
+  input {
+    background-color: var(--hover) !important;
+    border: 1px solid var(--hover);
+    border-radius: 8px !important;
+    padding: 12px 36px 12px 12px !important;
+    box-sizing: border-box;
+
+    &:focus, &:hover {
+    }
+  }
+
+  fieldset {
+    display: none;
+  }
+}
+
+.buttons {
+  @apply pt-3 flex gap-2;
+  padding-bottom: 16px;
+  width: 100%;
+  border-bottom: 1px solid var(--hover);
+}
+
+.button {
+  height: 40px;
+  font-size: 14px !important;
+  line-height: 16px;
+}

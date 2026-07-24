@@ -1,0 +1,37 @@
+.body {
+  @apply flex flex-col pr-3 border-r border-hover gap-2 max-w-[70%] w-full;
+}
+
+.form {
+  height: calc(100% - 48px);
+}
+
+.sidebar {
+  @apply flex flex-col gap-2 max-w-[30%] w-full pl-3 pr-1 max-h-[674px] h-full overflow-y-auto overflow-x-hidden;
+
+}
+
+
+.buttons {
+  @apply pt-3 flex gap-2;
+  justify-content: flex-end;
+  padding-bottom: 16px;
+  width: 100%;
+  border-bottom: 1px solid var(--hover);
+}
+
+.button {
+  padding: 12px 16px;
+  font-size: 14px !important;
+  line-height: 16px;
+}
+
+@media (max-width: 1919px) {
+  .body {
+    max-width: 75%;
+  }
+
+  .sidebar {
+    max-width: 25%;
+  }
+}

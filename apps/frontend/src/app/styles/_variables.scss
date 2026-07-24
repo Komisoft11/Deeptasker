@@ -1,0 +1,67 @@
+$bgColor: #EEEEF4;
+
+:export {
+  bgColor: $bgColor;
+}
+
+:root {
+  --bg: #F7F7F8;
+
+  --text-main: #1F2937;
+  --text-second: #707070;
+  --activeText: #FFF;
+
+  --accent: #3A7BFF;
+  --accent-10: rgba(58, 123, 255, 0.08);
+  --accent-60: rgba(58, 123, 255, 0.5);
+  --accent-range: rgba(58, 123, 255, 0.12);
+
+  --border: #E6E8EC;
+  --border-light: #EEF0F2;
+
+
+  --objects: #FBFBFC;
+
+  --hover: rgba(0, 0, 0, 0.04);
+
+  --mantine-color-gray-2: rgba(0, 0, 0, 0.08);
+  --hover-on-hover: rgba(0, 0, 0, 0.06);
+
+
+  --overlay: rgba(18, 18, 18, 0.65);
+
+  --system-green: #2FBF71;
+  --system-red: #F05252;
+  --system-yellow: #F5B301;
+
+  --popover-radius: 8px;
+
+  body.dark {
+    --bg: #161616;
+
+    --text-main: #EFEFEF;
+    --text-second: #A0A0A0;
+    --activeText: #EFEFEF;
+
+    --accent: #4D90FF;
+    --accent-10: rgba(77, 144, 255, 0.1);
+    --accent-range: rgba(77, 144, 255, 0.15);
+    --accent-60: rgba(77, 144, 255, 0.6);
+
+    --border: #E6E8EC;
+    --border-light: #EEF0F2;
+
+    --objects: #272727;
+    --border: rgba(255, 255, 255, 0.08);
+
+    --hover: rgba(255, 255, 255, 0.05);
+    --hover-on-hover: rgba(255, 255, 255, 0.07);
+
+    --mantine-color-gray-2: rgba(255, 255, 255, 0.08);
+
+    --system-green: #28A745;
+    --system-red: #DC3545;
+    --system-yellow: #FFC107;
+  }
+}
+

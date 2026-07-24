@@ -1,0 +1,35 @@
+.itemText {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+
+.item {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  border-radius: 8px;
+}
+
+.kanbanItem {
+
+}
+
+.kanbanSelect {
+  background-color: var(--hover);
+  height: 32px;
+  padding: 8px !important;
+  border-radius: 4px;
+  border-color: transparent;
+  width: max-content;
+  flex-shrink: 0;
+
+  &:hover:not(.kanbanSelectDisabled) {
+    background-color: var(--hover-on-hover) !important;
+  }
+}
+
+.kanbanSelectDisabled {
+  opacity: 1 !important;
+}

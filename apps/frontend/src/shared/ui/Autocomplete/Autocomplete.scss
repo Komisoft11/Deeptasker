@@ -1,0 +1,245 @@
+//Описание: Обертка вокруг элементов управления (input и индикаторы).
+//Задачи: Объединяет поле ввода, индикаторы и контейнер значений, обрабатывает фокус и взаимодействие пользователя.
+
+.DT_Autocomplete--is-disabled {
+  pointer-events: auto !important;
+  cursor: not-allowed !important;
+}
+
+.DT_Autocomplete__control {
+  border: none !important;
+  outline: none !important;
+  background-color: var(--hover) !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  cursor: text !important;
+  max-width: 100% !important;
+  width: 100% !important;
+
+  &--is-disabled {
+    border: solid 1px var(--hover) !important;
+    background-color: transparent !important;
+    pointer-events: none !important;
+  }
+
+  &:hover {
+    border-color: var(--text-main) !important;
+  }
+}
+
+.DT_Autocomplete__control--is-multi {
+  background-color: transparent !important;
+}
+
+.DT_Autocomplete__multi-value {
+  background-color: var(--hover) !important;
+  padding: 4px;
+  border-radius: 4px !important;
+
+  &__label {
+    color: var(--text-main) !important;
+  }
+
+  .DT_Autocomplete__indicators {
+    margin-top: 32px;
+    height: max-content;
+    align-self: center !important;
+  }
+}
+
+.DT_Autocomplete__value-container {
+  width: 100%;
+  padding: 8px 12px !important;
+  color: inherit !important;
+  outline: none !important;
+  border: none !important;
+
+}
+
+.DT_Autocomplete__value-container--is-multi {
+  @extend .DT_Autocomplete__value-container;
+  background-color: transparent !important;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  align-items: start !important;
+  gap: 8px;
+
+  .DT_Autocomplete__input-container {
+    padding-bottom: 0 !important;
+  }
+}
+
+.DT_Autocomplete__value-container--is-multi.DT_Autocomplete__value-container--has-value {
+  padding-bottom: 4px !important;
+
+  .DT_Autocomplete__input-container {
+    padding-bottom: 4px !important;
+    border-bottom: 1px solid var(--hover) !important;
+  }
+}
+
+
+.DT_Autocomplete__input-container {
+  width: 100%;
+  color: inherit !important;
+  margin: 0 !important;
+
+  font-size: 12px !important;
+  line-height: 16px !important;
+}
+
+.DT_Autocomplete__placeholder {
+  font-size: 14px !important;
+  line-height: 20px !important;
+  color: var(--text-second) !important;
+  margin: 0 !important;
+}
+
+
+//Описание: Отображается, если выбрано одно значение.
+//Задачи: Показать текущее выбранное значение в режиме одиночного выбора.
+.DT_Autocomplete__single-value {
+  color: inherit !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+
+  div div {
+    display: none;
+  }
+}
+
+//Описание: Стрелка для открытия/закрытия меню.
+//Задачи: Указывает на возможность раскрытия меню с опциями.
+.DT_Autocomplete__dropdown-indicator {
+  //color: #888;
+
+  &:hover {
+    //color: #555;
+  }
+}
+
+
+//Описание: Разделитель между индикаторами.
+//Задачи: Визуально разделяет индикаторы внутри элемента управления (control).
+.DT_Autocomplete__indicator-separator {
+  //background: red !important;
+}
+
+//Описание: Кнопка для очистки выбранного значения.
+//Задачи: Позволяет пользователю сбросить текущий выбор.
+.DT_Autocomplete__clear-indicator {
+  //color: #888;
+
+  &:hover {
+    //color: #555;
+  }
+}
+
+.DT_Autocomplete__input {
+  font-size: 14px !important;
+  line-height: 20px !important;
+  margin-top: -2px !important;
+  min-width: 100px !important;
+}
+
+
+//Описание: Меню, содержащее опции для выбора.
+//Задачи: Отображает список доступных для выбора опций.
+.DT_Autocomplete__menu {
+  min-width: 240px;
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  animation-name: slideDown !important;
+  margin-top: 4px !important;
+  background-color: var(--bg-modal) !important;
+  overflow: hidden;
+  border: 1px solid var(--border-dropdown) !important;
+  border-radius: 8px !important;
+
+
+  &-portal {
+    z-index: 10 !important;
+  }
+}
+
+//Описание: Контейнер для опций внутри меню.
+//Задачи: Обеспечивает прокрутку и размещение опций.
+.DT_Autocomplete__menu-list {
+  min-width: 240px;
+  padding: 8px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer !important;
+  background-color: var(--objects);
+  border: 1px solid var(--hover);
+  border-radius: 8px;
+}
+
+.DT_Autocomplete__menu-list:empty {
+  display: none !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+.DT_Autocomplete__clear-indicator {
+  padding: 0 !important;
+}
+
+.DT_Autocomplete__multi-value__remove {
+  &:hover {
+    background-color: var(--hover) !important;
+
+    svg path {
+      fill: var(--text-main)
+    }
+  }
+}
+
+
+//Описание: Отдельная опция внутри меню.
+//Задачи: Отображает одну опцию, которая может быть выбрана.
+.DT_Autocomplete__option {
+  cursor: pointer !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  color: var(--text-main);
+  border-radius: 8px;
+  padding: 8px 12px !important;
+  outline: 1px solid var(--hover) !important;
+
+
+  &:hover:not(&--is-selected) {
+    background-color: var(--hover) !important;
+  }
+
+  &--is-focused {
+    background-color: var(--hover) !important;
+  }
+
+  &--is-selected {
+    background-color: var(--hover) !important;
+    color: white;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1919px) {
+  .DT_Autocomplete__placeholder, .DT_Autocomplete__input, .DT_Autocomplete__option {
+    font-size: 12px !important;
+    line-height: 16px !important;
+  }
+}

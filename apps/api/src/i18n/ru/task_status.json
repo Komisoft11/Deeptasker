@@ -1,0 +1,9 @@
+{
+  "open": "Открыто",
+  "process": "В работе",
+  "executed": "Выполнено",
+  "cannot_find_status_in_project": "Невозможно найти статус в проекте {{projectId}}",
+  "default_status_cannot_be_deleted": "Статус по умолчанию {{statusName}} нельзя удалить",
+  "could_not_find_default_status_open_for_project": "Не удалось найти статус по умолчанию ОТКРЫТО для проекта {{projectId}}",
+  "status_not_found_for_project": "Статус {{statusId}} не найден для проекта {{projectId}}"
+}

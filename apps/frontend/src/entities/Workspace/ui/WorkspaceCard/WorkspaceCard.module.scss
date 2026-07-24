@@ -1,0 +1,51 @@
+.card {
+  --columns: 3;
+  width: calc((100% - 24px) / var(--columns, 3));
+  height: 218px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: var(--objects);
+
+  border: 1px solid transparent;
+
+  padding: 16px;
+  border-radius: 12px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--hover);
+  }
+}
+
+.active {
+  border-color: var(--accent);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 16px;
+}
+
+.edit {
+  padding: 8px;
+  border-radius: 8px;
+  background-color: var(--hover);
+
+  &:hover {
+    background-color: var(--hover);
+  }
+
+  svg path {
+    fill: var(--text-main);
+  }
+}
+
+@media (max-width: 1440px) {
+  .card {
+    --columns: 2;
+  }
+}

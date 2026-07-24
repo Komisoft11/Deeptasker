@@ -1,0 +1,68 @@
+.tagAddForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.input {
+  div {
+    background-color: transparent;
+    border: none;
+    padding: 0 8px;
+  }
+
+}
+
+.inputContainer {
+  padding: 16px 12px;
+  border-bottom: 1px solid var(--hover);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 4px;
+
+  div {
+    &:focus-within {
+      outline: none;
+    }
+  }
+
+
+  &:focus-within:not(.borderSystemRed) {
+    border-color: var(--accent);
+  }
+
+  &.borderSystemRed {
+    border-color: var(--system-red);
+  }
+}
+
+
+.tagColor {
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  background-color: #8F68FF;
+  flex-shrink: 0;
+
+}
+
+.tagContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.colorContainer {
+  max-width: 264px;
+  justify-content: normal !important;
+  gap: 8px;
+}
+
+.button {
+  padding: 12px 16px;
+}
+
+

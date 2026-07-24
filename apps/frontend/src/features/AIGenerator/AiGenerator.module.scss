@@ -1,0 +1,22 @@
+
+.button {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 30%;
+  }
+}
+
+.button:active {
+  .icon {
+    fill: var(--primaryGray-900);
+  }
+}
+
+.button:disabled.button:active {
+  .icon {
+    fill: #768BA7;
+  }
+}

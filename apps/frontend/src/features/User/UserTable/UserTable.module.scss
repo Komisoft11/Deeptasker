@@ -1,0 +1,61 @@
+.list {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1 0 0;
+  padding: 0 16px;
+}
+
+.tableRow {
+  @apply py-3;
+  grid-template-columns: 450px 1fr 210px;
+}
+
+.tableRowHeader {
+  @extend .tableRow;
+  @apply py-1;
+  width: calc(100% - 10px);
+  border-bottom: 1px solid var(--border) !important;
+
+  &:hover {
+    background-color: transparent !important;
+  }
+}
+
+.projectTableRow {
+  grid-template-columns: 450px 1fr 1fr 210px;
+}
+
+.iconWrap {
+  padding: 8px;
+  border-radius: 8px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--hover);
+  }
+
+  svg path {
+    fill: var(--text-main);
+  }
+}
+
+.inputControl {
+  padding: 12px !important;
+  border: 1px solid var(--accent) !important;
+  background-color: transparent !important;
+  max-width: 100% !important;
+  border-radius: 8px;
+
+  &:hover {
+    border-color: var(--accent) !important;
+  }
+}
+
+.inputContainer {
+  padding: 12px 0 !important;
+  background-color: transparent !important;
+}
+
+

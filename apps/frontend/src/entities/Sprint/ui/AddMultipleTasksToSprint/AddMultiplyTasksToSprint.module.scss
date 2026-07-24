@@ -1,0 +1,15 @@
+.row {
+  grid-template-columns: 44px 1fr 150px 1fr 1fr 1fr;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--hover) !important;
+}
+
+.header {
+  @extend .row;
+  pointer-events: auto !important;
+
+  &:hover {
+    background-color: transparent !important;
+  }
+}
+

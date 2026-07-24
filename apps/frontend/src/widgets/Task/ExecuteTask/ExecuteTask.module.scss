@@ -1,0 +1,75 @@
+@mixin border-gradient($from, $to, $weight: 0) {
+  $mix-main: mix($from, $to);
+  $mix-sub-from: mix($mix-main, $from);
+  $mix-sub-to: mix($mix-main, $to);
+
+  box-shadow: 0 1px 0 $weight rgba($mix-sub-to, .25),
+  0 -1px 0 $weight rgba($mix-sub-from, .25),
+  1px 0 0 $weight rgba($mix-sub-to, .25),
+  -1px 0 0 $weight rgba($mix-sub-from, .25),
+  1px -1px 0 $weight rgba($mix-main, .5),
+  -1px 1px 0 $weight rgba($mix-main, .5),
+  1px 1px 0 $weight rgba($to, .75),
+  -1px -1px 0 $weight rgba($from, .75);
+}
+
+.circle {
+  @apply w-5 h-5 self-baseline
+  rounded-full cursor-pointer
+  relative select-none;
+  border: 1px solid var(--accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    @apply pointer-events-none;
+  }
+
+  &.processed {
+    @include border-gradient(skyblue, hotpink);
+    animation: rotateThis 4s ease-in-out infinite;
+    border: none;
+  }
+
+  &.executed {
+    background-color: var(--system-green);
+    border-color: var(--system-green);
+  }
+
+  &.isAuto {
+    @apply opacity-30;
+  }
+
+  &.review {
+    background-color: var(--border);
+  }
+}
+
+@keyframes rotateThis {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+
+  to {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes psycho {
+  0% {
+    transform: rotate(0deg) scale(1) translate(0, 0);
+  }
+
+  33% {
+    transform: rotate(360deg) scale(1) translate(5px, 5px);
+  }
+
+  66% {
+    transform: rotate(720deg) scale(1) translate(-5px, -5px);
+  }
+
+  100% {
+    transform: rotate(1080deg) scale(1) translate(0, 0);
+  }
+}

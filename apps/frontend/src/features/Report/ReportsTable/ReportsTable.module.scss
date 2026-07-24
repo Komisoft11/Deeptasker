@@ -1,0 +1,18 @@
+.tableRow {
+  @apply py-3;
+  grid-template-columns: 40% 1fr 0.5fr 100px;
+}
+
+.headerTableRow {
+  @extend .tableRow;
+  border-bottom: 1px solid var(--border) !important;
+}
+
+.cell[data-cell='actions'] {
+  justify-content: flex-end !important;
+}
+
+.cell[data-cell='format'] {
+  justify-content: center !important;
+}
+

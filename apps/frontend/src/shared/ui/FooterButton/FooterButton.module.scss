@@ -1,0 +1,29 @@
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background-color: var(--bg);
+  border-top: 1px solid var(--border);
+
+  p {
+    svg path {
+      fill: var(--text-main);
+    }
+  }
+}
+
+.addButton {
+  display: flex;
+  gap: 8px;
+  padding: 12px 16px;
+}
+
+
+@media (max-width: 1919px) {
+  .addButton {
+    padding: 8px 12px;
+  }
+}

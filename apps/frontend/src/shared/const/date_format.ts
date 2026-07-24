@@ -1,0 +1,11 @@
+export const DATE_FORMAT = 'DD.MM.YYYY'
+export const FULL_TIME_FORMAT = 'HH:mm:ss'
+export const TIME_FORMAT = 'HH:mm'
+export const SHORT_DAY_FORMAT = 'D MMMM YYYY'
+export const WITHOUT_YEAR_FORMAT = 'D MMMM'
+export const WITH_DOTS = 'D.MM.YYYY'
+export const DATE_TIME_FORMAT = `${DATE_FORMAT} ${TIME_FORMAT}`
+export const DATE_PICKER_PRESET_FORMAT = `YYYY-MM-DD`
+export const DATE_PICKER_PRESET_WITH_TIME_FORMAT = `${DATE_PICKER_PRESET_FORMAT} ${FULL_TIME_FORMAT}`
+
+export const DATE_TIME_FULL_FORMAT = `${DATE_FORMAT} ${FULL_TIME_FORMAT}`

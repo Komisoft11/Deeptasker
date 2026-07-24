@@ -1,0 +1,229 @@
+
+.active, .button:hover {
+  background-color: var(--objects);
+}
+
+
+.sorter {
+  max-width: max-content;
+  width: 100%;
+  display: flex;
+  gap: 4px;
+}
+
+.trigger {
+  padding: 12px;
+
+  &:hover {
+    background-color: var(--hover);
+  }
+}
+
+.icon {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: var(--hover);
+  }
+}
+
+.item {
+  height: 32px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: var(--hover);
+  }
+}
+
+.active {
+  background-color: var(--hover);
+}
+
+.table {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  .cell[data-cell='title'] {
+    padding: 4px 0 4px 4px;
+  }
+
+  .cell:not([data-cell='title']) {
+    padding: 4px;
+  }
+
+  &[data-is-actions='false'] {
+    .row {
+      grid-template-columns: 38% 9.97% 12.23% 12.45% 10.62% 8.23% auto;
+    }
+
+    .cell[data-cell='actions'] {
+      display: none;
+    }
+  }
+
+  &[data-is-extended='false'][data-is-actions='true'], &[data-is-extended='true'][data-is-actions='true'] {
+    .row {
+      grid-template-columns: 34.19% 8.22% 14.44% 14.62% 10.23% 11.28% auto;
+    }
+
+    .cell[data-cell='description'] {
+      display: none;
+    }
+  }
+}
+
+.cell:is([data-cell='priority'], [data-cell='deadlineDate'], [data-cell='status']) {
+  margin: 0 auto;
+}
+
+.cell[data-cell='status'] {
+  button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.cell[data-cell='priority'] {
+  justify-content: center;
+}
+
+
+.list {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.row {
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+
+  &:hover {
+    cursor: grabbing;
+
+    :global(.timeTracker:not([data-disabled="true"])),
+    :global(.moveTaskPopover:not([data-disabled="true"])) {
+      opacity: 1;
+    }
+  }
+
+  &.clone {
+    opacity: 0.5;
+    width: fit-content !important;
+    background-color: var(--objects) !important;
+    border-color: transparent !important;
+    border-radius: 8px;
+    padding: 0 !important;
+
+    .cell:not([data-cell='title']) {
+      display: none;
+    }
+
+    .cell[data-cell='title'] {
+      padding: 12px !important;
+    }
+  }
+
+  &.parent {
+    background-color: var(--accent-10);
+    border-radius: 8px;
+    position: relative;
+
+    .cell[data-cell='title'] > div {
+      position: relative;
+    }
+
+    border: solid 1px var(--accent);
+  }
+
+
+  &.disableInteraction {
+    pointer-events: none;
+  }
+
+  &.executed > *:not([data-cell='title'] ) {
+    opacity: 0.5;
+  }
+}
+
+.header {
+  @extend .row;
+
+  .cell {
+    padding: 12px 4px !important;
+  }
+
+  .cell[data-cell='title'] {
+    padding: 12px 0 12px 12px !important;
+  }
+}
+
+.cell {
+  width: 100%;
+
+  > button {
+    margin: 0 auto;
+  }
+}
+
+.tracking {
+  border: 1px solid var(--accent) !important;
+  border-radius: 8px;
+}
+
+
+.addRow {
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px var(--accent) !important;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: transparent;
+  }
+
+}
+
+.cell[data-cell='input'] {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  :global(.DT_Input_Container) {
+    background-color: transparent;
+
+    &:focus-within {
+      outline: none;
+    }
+  }
+}
+
+.cell[data-cell='subtask-actions'] {
+  width: max-content;
+  margin-right: 20px;
+}
+
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: solid 1px var(--border);
+}
+
+.input {
+  div {
+    padding-left: 0;
+  }
+}

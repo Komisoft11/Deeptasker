@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "useUnknownInCatchVariables": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "noEmit": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
+    "types": ["vite/client"],
+    "baseUrl": "src",
+    "paths": {
+      "@/app/*": ["app/*"],
+      "@/pages/*": ["pages/*"],
+      "@/widgets/*": ["widgets/*"],
+      "@/features/*": ["features/*"],
+      "@/entities/*": ["entities/*"],
+      "@/shared/*": ["shared/*"]
+    }
+  },
+  "ts-node": {
+    "experimentalSpecifierResolution": "node",
+    "esm": true
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "vite.config.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

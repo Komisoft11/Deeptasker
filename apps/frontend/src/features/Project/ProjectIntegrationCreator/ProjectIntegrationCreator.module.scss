@@ -1,0 +1,13 @@
+.container {
+  @apply grid grid-cols-2 gap-2;
+}
+
+.item {
+  padding: 40px;
+  border-radius: 8px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--hover);
+  }
+}

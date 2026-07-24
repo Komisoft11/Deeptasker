@@ -1,0 +1,5 @@
+{
+  "file_not_found": "Файл не найден",
+  "file_for_task_not_found": "Файл для задачи не найден",
+  "file_not_found_in_object_storage": "Файл не найден в хранилище объектов"
+}

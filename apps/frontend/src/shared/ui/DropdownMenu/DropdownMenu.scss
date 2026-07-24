@@ -1,0 +1,168 @@
+.DT_DropdownMenuContent,
+.DT_DropdownMenuSubContent {
+  min-width: 220px;
+  background-color: var(--objects);
+  border: 1px solid var(--hover);
+  border-radius: 8px;
+  padding: 8px;
+  animation-duration: 400ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.DT_DropdownMenuContent[data-side='top'],
+.DT_DropdownMenuSubContent[data-side='top'] {
+  animation-name: slideDownAndFade;
+}
+
+.DT_DropdownMenuContent[data-side='right'],
+.DT_DropdownMenuSubContent[data-side='right'] {
+  animation-name: slideLeftAndFade;
+}
+
+.DT_DropdownMenuContent[data-side='bottom'],
+.DT_DropdownMenuSubContent[data-side='bottom'] {
+  animation-name: slideUpAndFade;
+}
+
+.DT_DropdownMenuContent[data-side='left'],
+.DT_DropdownMenuSubContent[data-side='left'] {
+  animation-name: slideRightAndFade;
+}
+
+.DT_DropdownMenuItem,
+.DT_DropdownMenuCheckboxItem,
+.DT_DropdownMenuRadioItem,
+.DT_DropdownMenuSubTrigger {
+  font-size: 13px;
+  line-height: 1;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  height: 25px;
+  position: relative;
+  padding-left: 25px;
+  user-select: none;
+  outline: none;
+}
+
+.DT_DropdownMenuSubTrigger[data-state='open'] {
+  background-color: var(--green-900);
+  color: var(--green-700);
+}
+
+.DT_DropdownMenuItem[data-disabled],
+.DT_DropdownMenuCheckboxItem[data-disabled],
+.DT_DropdownMenuRadioItem[data-disabled],
+.DT_DropdownMenuSubTrigger[data-disabled] {
+  color: var(--text-main);
+  pointer-events: none;
+}
+
+.DT_DropdownMenuItem[data-highlighted],
+.DT_DropdownMenuCheckboxItem[data-highlighted],
+.DT_DropdownMenuRadioItem[data-highlighted],
+.DT_DropdownMenuSubTrigger[data-highlighted] {
+
+}
+
+.DT_DropdownMenuLabel {
+}
+
+.DT_DropdownMenuSeparator {
+  height: 1px;
+
+  margin: 5px;
+}
+
+.DT_DropdownMenuItemIndicator {
+  position: absolute;
+  left: 0;
+  width: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.DT_DropdownMenuArrow {
+  fill: white;
+}
+
+.DT_IconButton {
+  font-family: inherit;
+  border-radius: 100%;
+  height: 35px;
+  width: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+
+}
+
+.DT_IconButton:hover {
+
+}
+
+.DT_IconButton:focus {
+  box-shadow: 0 0 0 2px black;
+}
+
+.DT_RightSlot {
+  margin-left: auto;
+  padding-left: 20px;
+
+}
+
+[data-highlighted] > .DT_RightSlot {
+  color: white;
+}
+
+[data-disabled] .DT_RightSlot {
+
+}
+
+@keyframes slideUpAndFade {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRightAndFade {
+  from {
+    opacity: 0;
+    transform: translateX(-2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideDownAndFade {
+  from {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeftAndFade {
+  from {
+    opacity: 0;
+    transform: translateX(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

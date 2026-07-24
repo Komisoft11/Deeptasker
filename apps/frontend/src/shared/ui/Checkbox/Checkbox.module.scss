@@ -1,0 +1,42 @@
+.checkbox {
+  height: 24px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  > button {
+    padding: 0;
+    width: 20px;
+    height: 20px !important;
+    border: 1px solid var(--text-second);
+    border-radius: 4px;
+  }
+
+  > [aria-checked='true'] {
+    border: 1px solid var(--accent);
+    background-color: var(--accent);
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  label:hover {
+    cursor: pointer;
+  }
+}
+
+.icon {
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (max-width: 1919px) {
+  .checkbox {
+    > button {
+      width: 16px;
+      height: 16px !important;
+    }
+    
+  }
+}

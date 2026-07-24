@@ -1,0 +1,48 @@
+{
+  "emailCopied": "Email successfully copied",
+  "usernameCopied": "Username successfully copied",
+  "tracker": {
+    "stopTrackingTitle": "Stop tracking",
+    "stopTrackingText": "You've stopped tracking the task: {{title}}",
+    "startTrackingTitle": "Start tracking",
+    "startTrackingText": "You've started tracking the task: {{title}}"
+  },
+  "folder": {
+    "create": "Folder {{title}} was successfully created",
+    "update": "Folder was successfully updated",
+    "delete": "Folder {{title}} was successfully deleted"
+  },
+  "report": {
+    "create": {
+      "title": "Report {{title}} is ready to be created",
+      "text": "You can download the completed report from the project's reports page"
+    },
+    "generated": {
+      "title": "Report {{title}} has been successfully generated",
+      "text": "You can download the completed report from the project's reports page"
+    },
+    "deleted": "Report {{title}} has been successfully deleted"
+  },
+  "workspace": {
+    "create": "Workspace {{title}} successfully created",
+    "delete": "Workspace {{title}} successfully deleted",
+    "update": "Workspace {{title}} successfully changed"
+  },
+  "project": {
+    "create": "Project {{title}} successfully created",
+    "delete": "Project {{title}} successfully deleted",
+    "update": "Project {{title}} successfully changed"
+  },
+  "kanban": {
+    "duplicateSuccess": {
+      "title": "Status duplicated",
+      "description": "You created a copy of {{name}}"
+    }
+  },
+  "task": {
+    "titleCopied": "Task title copied"
+  },
+  "clipboard": {
+    "copied": "Copied"
+  }
+}

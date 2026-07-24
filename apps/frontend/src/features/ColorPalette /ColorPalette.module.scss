@@ -1,0 +1,33 @@
+.palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 24px 16px;
+  border-radius: 8px;
+  background-color: var(--objects);
+  border: var(--hover);
+  justify-content: center;
+}
+
+.colorButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
+
+.circle {
+  display: flex;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  width: 16px;
+  height: 16px;
+}

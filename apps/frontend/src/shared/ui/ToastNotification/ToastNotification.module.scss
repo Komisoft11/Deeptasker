@@ -1,0 +1,59 @@
+.toast {
+  width: 400px;
+  height: max-content;
+}
+
+.toastContent {
+  display: flex;
+  gap: 8px;
+  padding: 0;
+}
+
+.toastContainer {
+  color: var(--text-main);
+  background: var(--objects);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: none;
+}
+
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px
+}
+
+.title {
+  margin-top: 4px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideEnter {
+  animation: slideIn 0.3s forwards;
+}
+
+.instantExit {
+  animation: instantFade 0.001s forwards;
+}
+
+@keyframes instantFade {
+  to {
+    opacity: 0;
+  }
+}

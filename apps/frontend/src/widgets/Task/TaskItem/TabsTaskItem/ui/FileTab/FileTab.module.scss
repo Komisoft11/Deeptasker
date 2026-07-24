@@ -1,0 +1,13 @@
+.tableRow {
+  grid-template-columns: 56px 300px 1fr 1fr 150px;
+  padding: 8px 0;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+}
+
+[data-state='actions'] {
+  justify-content: end;
+}

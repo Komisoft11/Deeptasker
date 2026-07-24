@@ -1,0 +1,29 @@
+.trigger {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 24px;
+  border-radius: 0;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 4px;
+  border-top: 1px solid var(--border);
+}
+
+.contentItem {
+  padding: 4px 8px 4px 4px;
+  border-radius: 8px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr  1fr 1fr 72px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--hover);
+  }
+}

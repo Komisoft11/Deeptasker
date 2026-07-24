@@ -1,0 +1,36 @@
+.item {
+  width: 100%;
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--hover);
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.date {
+  height: 38px;
+}
+
+.sprint {
+  width: 180px !important;
+}
+
+@media (max-width: 1919px) {
+  .item {
+    flex-direction: column;
+    padding: 8px 0;
+    gap: 8px;
+  }
+
+  .sprintItem {
+    > div, button {
+      width: 200px;
+    }
+  }
+
+
+  .sprint, .deadline, .priority, .status {
+    width: 200px !important;
+  }
+}

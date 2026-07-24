@@ -1,0 +1,30 @@
+.actionTask {
+  @apply p-[2px] w-[28px] h-[28px] rounded-[5px]
+  cursor-pointer
+  flex items-center justify-center;
+
+  &:hover {
+
+    path {
+
+    }
+  }
+}
+
+.transitionEnter {
+  opacity: 0;
+}
+
+.transitionEnterActive {
+  transition: all 200ms;
+  opacity: 1;
+}
+
+.transitionExit {
+  opacity: 1;
+}
+
+.transitionExitActive {
+  transition: all 200ms;
+  opacity: 0;
+}

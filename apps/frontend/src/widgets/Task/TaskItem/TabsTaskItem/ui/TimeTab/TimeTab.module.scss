@@ -1,0 +1,45 @@
+.container {
+  width: 100%;
+}
+
+.tableRow {
+  grid-template-columns: 1fr 1fr 1fr 120px 125px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+
+  &:hover {
+    background-color: transparent;
+    border-bottom: 1px solid var(--border);
+    border-top: 1px solid var(--border);
+
+  }
+}
+
+
+.timeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px 0;
+  border-top: 1px solid var(--border);
+}
+
+.comment {
+  background-color: var(--hover);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 8px;
+}
+
+.timeInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  input {
+    width: calc(33% - 16px);
+    margin: 0;
+  }
+}

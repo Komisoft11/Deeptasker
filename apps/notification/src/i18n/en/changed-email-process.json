@@ -1,0 +1,7 @@
+{
+  "title": "Your email is being changed",
+  "explanation": "We've received a request to change the email address associated with your account.",
+  "body": "New email address:",
+  "warning": "If you didn't request this action or believe this was a mistake, please contact our support team as soon as possible.",
+  "subject": "Deeptasker: Your email is being changed"
+}

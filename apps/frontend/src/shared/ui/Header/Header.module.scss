@@ -1,0 +1,11 @@
+.header {
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+  max-height: 73px;
+  height: 100%;
+}

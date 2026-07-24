@@ -1,0 +1,9 @@
+.text {
+  @apply flex flex-col gap-2
+  text-center;
+  overflow-wrap: break-word;
+
+  p {
+    word-wrap: break-word;
+  }
+}

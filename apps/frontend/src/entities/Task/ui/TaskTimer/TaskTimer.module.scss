@@ -1,0 +1,10 @@
+.container {
+  @apply cursor-pointer
+  gap-1 flex items-center
+  select-none
+  p-2 rounded;
+
+  min-width: 80px;
+  width: 100%;
+  background-color: var(--accent);
+}

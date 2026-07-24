@@ -1,0 +1,17 @@
+.dialog {
+  width: 400px;
+
+  h2 {
+    @apply text-xl mb-4;
+  }
+
+  .content {
+    @apply flex-center-between;
+  }
+
+  .main {
+    &:not(&:first-child) {
+      @apply mt-[10px];
+    }
+  }
+}

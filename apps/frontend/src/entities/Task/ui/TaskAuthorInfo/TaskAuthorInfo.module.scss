@@ -1,0 +1,34 @@
+.info {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+
+  & > p:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+
+  }
+}
+
+.container {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  border-radius: 4px;
+  padding: 4px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--objects);
+
+    .icon {
+      display: block;
+    }
+  }
+}
+
+.icon {
+  display: none;
+}

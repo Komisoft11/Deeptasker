@@ -1,0 +1,7 @@
+{
+  "title": "Confirm account deletion",
+  "body": "To confirm the deletion of your account, please enter the verification code below",
+  "expires": "This confirmation code is valid for 2 hours.",
+  "warning": "If you did not request this change, we recommend checking the security of your account immediately.",
+  "subject": "Deeptasker: Confirm account deletion"
+}

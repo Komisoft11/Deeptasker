@@ -1,0 +1,37 @@
+.container {
+  @apply flex flex-col gap-3;
+}
+
+.title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.heading {
+  @apply flex gap-1;
+}
+
+.inputContainer {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--accent);
+  align-items: center;
+  padding: 8px 12px 8px 0;
+}
+
+.inputField {
+  background-color: transparent;
+  width: 100%;
+
+
+  div {
+    background-color: transparent;
+
+    &:focus-within {
+      outline: none;
+    }
+  }
+}

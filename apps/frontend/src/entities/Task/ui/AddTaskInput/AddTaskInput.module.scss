@@ -1,0 +1,38 @@
+.input {
+  width: 100%;
+  background-color: var(--hover);
+  font-size: 14px;
+  line-height: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  max-height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  &:focus, &:hover {
+
+  }
+
+  &:focus {
+    cursor: text !important;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.label {
+  font-size: 12px;
+  line-height: 16px;
+
+}
+
+.button {
+  width: 120px !important;
+  border-radius: 8px !important;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px
+}

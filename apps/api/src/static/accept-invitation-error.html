@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="icon" type="image" href="/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deeptasker</title>
+  <style>
+     .link {
+      border: none;
+      background-color: #4D90FF;
+      color: #EFEFEF;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 12px 16px;
+      border-radius: 8px;
+      display: inline-block;
+      transition: background-color 0.2s;
+      text-decoration: none;
+    }
+
+    .link:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body style="font-family: Inter, sans-serif; background-color: #161616; margin: 0; padding: 0; color: #EFEFEF; overflow: hidden;">
+<div id="root" >
+   <div style="display: flex; flex-direction: column; padding: 32px 64px;">
+    <img src="/logo.png" alt="Лого" width="44px" height="44px">
+
+    <div style="display: flex; flex-direction: column; gap: 48px; margin-top: 160px">
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <h1 style="font-size: 92px; line-height: 100px; text-transform: lowercase; margin: 0">Ссылка недействительна</h1>
+        <p style="font-size: 20px; line-height: 32px; color: #A0A0A0; margin: 0; max-width: 980px">
+          Кажется, срок действия этой ссылки истёк. Если вы всё ещё хотите присоединиться, обратитесь за новым приглашением.
+        </p>
+      </div>
+
+      <div style="display: flex; gap: 8px;">
+        <a href={{DYNAMIC_LINK}} class="link" >
+          Обратно к задачам
+        </a>
+      </div>
+    </div>
+
+    <p style="margin: 0; position: absolute; bottom: -81px; right: -12px; font-size: 480px; letter-spacing: -4px; font-weight: 900; line-height: 512px; opacity: 10%; color: #A0A0A0">403</p>
+  </div>
+</div>
+</body>
+</html>

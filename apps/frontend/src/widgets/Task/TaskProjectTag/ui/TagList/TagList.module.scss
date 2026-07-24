@@ -1,0 +1,19 @@
+.containerItem {
+  border-radius: 8px;
+}
+
+.dropdown {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.createTag {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}

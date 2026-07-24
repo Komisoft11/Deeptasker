@@ -1,0 +1,10 @@
+.dialog {
+  background-color: var(--bg-body);
+  color: var(--primaryGray-900);
+  max-width: 550px;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}

@@ -1,0 +1,10 @@
+@media (max-width: 1919px) {
+  .container {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .item {
+    width: 200px !important;
+  }
+}

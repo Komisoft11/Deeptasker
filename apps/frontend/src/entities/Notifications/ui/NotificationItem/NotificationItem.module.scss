@@ -1,0 +1,34 @@
+.notificationText {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 8px 16px 16px;
+  border-bottom: 1px solid var(--hover);
+
+  position: relative;
+
+
+  &:hover {
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: var(--hover);
+    border-color: transparent;
+
+    .delete {
+      opacity: 1;
+    }
+  }
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.comment {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: var(--hover);
+  font-style: italic;
+}

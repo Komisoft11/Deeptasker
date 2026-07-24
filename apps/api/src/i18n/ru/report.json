@@ -1,0 +1,19 @@
+{
+  "header_id": "Идентификатор",
+  "header_name": "Название задачи",
+  "header_description": "Описание",
+  "header_creator": "Создатель",
+  "header_date_created": "Дата создания",
+  "header_date_executed": "Дата выполнения",
+  "header_sprint": "Спринт",
+  "header_time_expired": "Время истечения",
+  "header_executor": "Исполнитель",
+  "header_spent_time": "Затраченное время",
+  "header_assigner": "Назначивший",
+  "header_observers": "Наблюдатели",
+  "header_file_links": "Ссылки на файлы",
+  "header_tags": "Теги",
+  "header_date_deadline": "Дата дедлайна",
+  "header_time_estimate": "Оценка времени",
+  "header_status": "Статус задачи"
+}

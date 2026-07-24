@@ -1,0 +1,76 @@
+.filled {
+  background-color: var(--accent);
+  justify-content: center;
+  color: #EFEFEF;
+  transition: filter 0.2s ease;
+
+  &.red {
+    background: var(--system-red);
+  }
+
+  &.dark {
+    background: var(--hover);
+    color: var(--text-main);
+  }
+
+  &.green {
+    background: var(--system-green);
+  }
+
+  &.transparent {
+    background: transparent;
+
+    &:hover {
+      background-color: var(--hover);
+    }
+  }
+
+  &:hover:not(:focus, :disabled) {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    background-color: var(--text-second);
+    opacity: 0.3;
+  }
+}
+
+
+.outline {
+  border: 1px solid var(--accent);
+  justify-content: center;
+
+  &.red {
+    border-color: var(--system-red);
+    color: var(--system-red);
+
+    svg path {
+      fill: var(--system-red);
+    }
+
+    &:hover:not(:focus, :disabled) {
+      background-color: rgba(220, 53, 69, 0.08)
+    }
+  }
+
+  &.dark {
+    border-color: var(--border);
+
+    &:hover:not(:focus, :disabled) {
+      background-color: var(--hover);
+    }
+  }
+
+  &:hover:not(:focus, :disabled) {
+    background-color: var(--hover);
+  }
+
+  &:disabled {
+    color: var(--text-second);
+    cursor: not-allowed;
+
+    svg path {
+      fill: var(--text-second);
+    }
+  }
+}

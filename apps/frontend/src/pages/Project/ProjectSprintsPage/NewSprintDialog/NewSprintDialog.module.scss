@@ -1,0 +1,23 @@
+.status {
+  display: none;
+
+  &[data-state='checked'] ~ label {
+    background-color: var(--accent);
+  }
+
+}
+
+.label {
+  text-align: center;
+  white-space: nowrap;
+  width: 100%;
+  padding: 8px 16px;
+  background-color: var(--hover);
+  border-radius: 8px;
+
+
+  &:hover {
+    background-color: var(--accent) !important;
+    cursor: pointer !important;
+  }
+}

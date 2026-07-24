@@ -1,0 +1,30 @@
+{
+  "not_found": "Задача {{id}} не найдена",
+  "forbidden": "У вас нет доступа к этой задаче",
+  "forbidden_upload": "У вас нет доступа к загрузке файлов к этой задаче",
+  "assign": {
+    "user_no_access_to_project": "Назначенный пользователь не имеет доступа к проекту"
+  },
+  "task_has_more_than_one_parent_please_specify_which_parent_to_move_from": "Задача {{id}} имеет более одного родителя. Укажите, от какого родителя переехать",
+  "task_status_in_project_not_found": "Статус задачи {{code}} в проекте {{id}} не найден",
+  "task_is_not_bound_to": "Задача {{taskId}} не привязана к {{parentId}}",
+  "task_is_root_task_you_can_not_bind_it": "Задача {{taskId}} является корневой задачей. Вы не можете привязать её!",
+  "you_can_not_sent_task_to_review_you_have_to_finish_all_subtasks": "Вы не можете отправить задачу {{taskId}} на рассмотрение. Вам необходимо выполнить ВСЕ подзадачи.",
+  "you_can_not_back_task_to_work_because_it_is_already_confirmed_by_assigner": "Вы не можете вернуть задачу {{taskId}} в работу, поскольку она уже подтверждена исполнителем: {{assignerName}}.",
+  "timer": {
+    "end_time_after_current_time": "Конец времени не должно быть больше текущего времени",
+    "end_time_before_start_time": "Конец времени не должен быть раньше начала времени",
+    "comment_required": "Комментарий обязателен когда редактируешь время",
+    "timer_has_intersections": "Ваш таймер пересекается с существующими таймерами"
+  },
+  "move": {
+    "task_has_ancestor": "Задача {{id}} имеет предка задачу {{ancestorId}}"
+  },
+  "user_is_not_executor": "Пользователь не является исполнителем задачи {{taskId}}",
+  "statuses": {
+    "open": "Открыто",
+    "process": "В работе",
+    "executed": "Выполнено",
+    "review": "На проверке"
+  }
+}

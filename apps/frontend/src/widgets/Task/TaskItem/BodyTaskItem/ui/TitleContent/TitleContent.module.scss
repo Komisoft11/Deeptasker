@@ -1,0 +1,38 @@
+.inputContainer {
+  text-overflow: ellipsis;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  word-break: break-word;
+
+  div {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    border-bottom: 1px solid transparent;
+
+    &:focus-within {
+      outline: none;
+    }
+  }
+}
+
+.focused {
+  border-bottom: 1px solid var(--accent);
+}
+
+.error {
+  border-bottom: 1px solid var(--system-red);
+}
+
+.input {
+  font-size: 1.5rem !important;
+  line-height: 1.75rem !important;
+  font-weight: 700;
+}
+
+@media (max-width: 1919px) {
+  .input {
+    font-size: 1.25rem !important;
+  }
+}

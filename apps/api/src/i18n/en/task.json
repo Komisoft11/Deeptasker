@@ -1,0 +1,33 @@
+{
+  "not_found": "Task {{id}} not found",
+  "forbidden": "You do not have access to this task",
+  "forbidden_upload": "You do not have upload permissions for this task",
+  "assign": {
+    "user_no_access_to_project": "Assigned user has no access to project"
+  },
+  "update": {
+    "status_bad": "Provided status does not belong to project"
+  },
+  "task_has_more_than_one_parent_please_specify_which_parent_to_move_from": "Task {{id}} has more than one parent. Please specify which parent to move from",
+  "task_status_in_project_not_found": "Task status {{code}} in project {{id}} not found",
+  "task_is_not_bound_to": "Task {{taskId}} is not bound to {{parentId}}",
+  "task_is_root_task_you_can_not_bind_it": "Task {{taskId}} is root task. You can not bind it!",
+  "you_can_not_sent_task_to_review_you_have_to_finish_all_subtasks": "You can not sent task {{taskId}} to review. You have to finish ALL subtasks.",
+  "you_can_not_back_task_to_work_because_it_is_already_confirmed_by_assigner": "You can not back task {{taskId}} to work, because it is already confirmed by assigner: {{assignerName}}",
+  "timer": {
+    "end_time_after_current_time": "End time should not be in the future",
+    "end_time_before_start_time": "End time is before start time",
+    "comment_required": "Comment is required when editing end time",
+    "timer_has_intersections": "Your timer has intersections with existing timers"
+  },
+  "move": {
+    "task_has_ancestor": "Task {{id}} has ancestor task {{ancestorId}}"
+  },
+  "user_is_not_executor": "User is not the executor of task {{taskId}}",
+  "statuses": {
+    "open": "Open",
+    "process": "In process",
+    "executed": "Executed",
+    "review": "On review"
+  }
+}

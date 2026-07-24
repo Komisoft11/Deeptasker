@@ -1,0 +1,35 @@
+.folder {
+  padding: 12px;
+  width: 180px;
+  height: 48px;
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  background-color: var(--hover);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+
+  &:hover .settings {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+.over {
+  background-color: var(--accent-10);
+  border-color: var(--accent);
+}
+
+.settings {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .3s ease;
+  background-color: transparent;
+}
+

@@ -1,0 +1,65 @@
+{
+  "template": "You're receiving this email because of your account on",
+  "warning": "This email is automatically generated, please do not reply to it.",
+  "verification": {
+    "user": {
+      "title": "Activation Code",
+      "body": "Before logging in, we need to confirm your identity. Please enter the code below on the signup page."
+    },
+    "delete_account": {
+      "heading": "Confirm account deletion",
+      "instruction": "To confirm the deletion of your account, please enter the verification code below:",
+      "warning": "If you did not request this action, you can safely ignore this email."
+    },
+    "expires": "Your verification code expires in 2 hours.",
+    "warning": "If you did not request this action, you can safely ignore this email."
+  },
+  "notification": {
+    "change": {
+      "subject": "Your email is being changed",
+      "text_explanation": "We've received a request to change the email address associated with your account.",
+      "new_email": "New email address: <strong>{email}</strong>",
+      "successfully": {
+        "heading": "Your email address was updated",
+        "body_new": "You’ve successfully changed the email associated with your account.",
+        "body_previous": "Your account is now linked to the new email address: <strong>{email}</strong>."
+      },
+      "password": {
+        "heading": "Your password was changed",
+        "confirmation": "This is a confirmation that your account password was changed successfully."
+      }
+    },
+    "account_deleted": {
+      "heading": "Your account has been deleted",
+      "confirmation": "This is a confirmation that your account on <strong>deeptasker.net</strong> has been permanently deleted."
+    },
+    "warning": "If you didn't request this action or believe this was a mistake, please contact our support team as soon as possible."
+  },
+  "invitation": {
+    "workspace": {
+      "title": "You've been invited to a workspace!",
+      "description": "Someone invited you to join their workspace on <strong>deeptasker.net</strong>. To join, click the button below."
+    },
+    "project": {
+      "title": "You've been invited to a project!",
+      "description": "Someone invited you to join their project on <strong>deeptasker.net</strong>. To join, click the button below."
+    },
+    "accept": "Accept",
+    "decline": "Decline",
+    "fallback": "If the buttons above don’t work, use the links below:"
+  },
+  "subjects": {
+    "code": {
+      "activation": "Deeptasker activation code!",
+      "verify": "Deeptasker verification code!"
+    },
+    "invitation": {
+      "workspace": "Invitation to Deeptasker workspace!",
+      "project": "Invitation to Deeptasker project!"
+    },
+    "notification": {
+      "account": "Change Deeptasker account!",
+      "delete": "Delete Deeptasker account!"
+    }
+  }
+}

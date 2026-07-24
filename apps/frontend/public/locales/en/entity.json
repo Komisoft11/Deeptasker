@@ -1,0 +1,585 @@
+{
+  "task": {
+    "tasksCount_one": "{{count}} task",
+    "tasksCount_other": "{{count}} tasks",
+    "subtasksCount_one": "{{count}} subtask",
+    "subtasksCount_other": "{{count}} subtasks",
+    "subtasksCompleted_one": "{{count}} completed",
+    "subtasksCompleted_other": "{{count}} completed",
+    "title": "Tasks",
+    "taskName": "Task name",
+    "author": "Author",
+    "created": "Created",
+    "info": {
+      "subtasks": "Subtasks",
+      "description": "Description",
+      "completedSubtasks": "Completed: {{percentage}}% ({{executedCountTask}} of {{totalSubtasks}} subtasks)",
+      "subtasksPlaceholder": "Your subtasks will appear here",
+      "empty": "Track tasks, monitor their progress and discuss details in a common project",
+      "title": "Title required",
+      "addTask": "Add task",
+      "addTasks": "Add tasks",
+      "addTaskAndOpen": "Add and open",
+      "addSubtask": "Add subtask",
+      "enterNameTask": "Enter the name of the task",
+      "enterNameParentTask": "Enter the name of the parent task",
+      "executor": "Executor",
+      "assigner": "Assigner",
+      "observers": "Observers",
+      "priority": "Priority",
+      "deadline": "Deadline",
+      "status": "Status",
+      "createTask": "Create task",
+      "assign": "Assign",
+      "dateStart": "Start date",
+      "sprint": "Sprint",
+      "timeEstimate": "Time estimate",
+      "timeSpent": "Time spent"
+    },
+    "subtasks": {
+      "show": "Show subtasks",
+      "hide": "Hide subtasks",
+      "create": "Create subtask"
+    },
+    "taskStatus": {
+      "title": "Status",
+      "completed": "Completed",
+      "uncompleted": "Uncompleted"
+    },
+    "statuses": {
+      "open": "Open",
+      "process": "In process",
+      "executed": "Executed",
+      "review": "On review",
+      "input": "Start typing status"
+    },
+    "enterTaskName": "Enter a task name",
+    "notAssigned": "Not assigned",
+    "observer": "Observer",
+    "reorder": "Move",
+    "moveToTask": "Go to task",
+    "associatedTasks": "Associated tasks",
+    "parentTasks": "Parent tasks",
+    "link": "Link for this task",
+    "untie": "Untie",
+    "completedTasks": "Completed tasks",
+    "moveTask": "Move task",
+    "comments": {
+      "errorRequired": "Fill out a comment",
+      "addComment": "Add comment",
+      "commentsPlaceholder": "Comments for your task will appear here"
+    },
+    "error": {
+      "empty": "You don't have any tasks"
+    },
+    "change": "has changed the task",
+    "overdue": "Overdue tasks",
+    "delete": "Delete this task",
+    "quickAddTask": "Quick Add Task",
+    "newTaskCreation": "New task creation",
+    "addingTaskToSprint": "Adding task to sprint",
+    "sections": {
+      "general": "General information",
+      "dates": "Dates",
+      "time": "Time tracking",
+      "people": "People"
+    },
+    "showCompleted": "Show completed",
+    "copyLink": "Copy task link"
+  },
+  "planner": {
+    "title": "Scheduler",
+    "noExecutor": "No executor"
+  },
+  "focus": {
+    "title": "Focus",
+    "on": "Focus mode"
+  },
+  "report": {
+    "create": "Create report",
+    "title": "Reports",
+    "createForm": {
+      "title": "Creating a report",
+      "instructions": "Select the necessary items to create a report. Then, you will be able to download it.",
+      "enterName": "Enter the report name",
+      "fileFormat": "File format",
+      "taskStatus": "Task status for the report",
+      "periodSelect": {
+        "placeholder": "Select the period for the report",
+        "lastWeek": "Last week",
+        "lastMonth": "Last month",
+        "lastYear": "Last year",
+        "custom": "Select period"
+      },
+      "noProjectReportsAccess": "You do not have access to this project's reports."
+    },
+    "statuses": {
+      "pending": "Pending",
+      "completed": "Success",
+      "error": "Error",
+      "in_progress": "In progress"
+    }
+  },
+  "sprints": {
+    "title": "Sprints",
+    "createNew": "Create new",
+    "addExisting": "Add existing",
+    "sprintTasksPlaceholder": "Here will be the sprint tasks",
+    "selectSprint": "Select a sprint",
+    "addSprint": "Add sprint",
+    "statuses": {
+      "active": "Active",
+      "planned": "Planned",
+      "completed": "Completed"
+    },
+    "activeSprints": "Active sprints",
+    "plannedSprints": "Upcoming sprints",
+    "completedSprints": "Completed sprints",
+    "noData": "No sprint data available",
+    "noTasks": "No tasks",
+    "addingNewSprint": "Adding a new sprint",
+    "enterNewSprintName": "Enter the new sprint name",
+    "period": "Period"
+  },
+  "profile": {
+    "title": "Profile",
+    "nav": {
+      "info": "My account",
+      "security": "Security",
+      "payment": "Payments"
+    },
+    "content": {
+      "info": "Your personal information",
+      "security": "Change your password",
+      "payment": "Payments & Billing information"
+    },
+    "warning": {
+      "title": "Warning!",
+      "password": "You're changing the password!"
+    },
+    "error": {
+      "required": "This field can't be empty",
+      "min": "The name must be longer than or equal to 3 characters",
+      "email": "This is not an email :(",
+      "password": "The password is incorrect",
+      "newPassword": "Bad password, think of another"
+    }
+  },
+  "project": {
+    "title": "Projects",
+    "single": "Project",
+    "projectsCount_one": "{{count}} project",
+    "projectsCount_other": "{{count}} projects",
+    "leave": "Leave project",
+    "search": "Search in projects",
+    "create": "Create project",
+    "first create": "Create your first project",
+    "new": "New project",
+    "name": "Project Name",
+    "enterName": "Enter name project",
+    "deleting": "Deleting a project",
+    "delete": "Project deleted",
+    "deleteBody": "Are you sure you want to delete the {{projectName}}?",
+    "deleteTitle": "Are you sure you want to delete it",
+    "deleteButton": "Delete project",
+    "deleteProjectDescription": "This action will delete the project. If you want to restore it later, go to Deleted Projects and recover it from there.",
+    "youWillLose": "You will lose:",
+    "invitePeople": "Invite people",
+    "invitedPeopleList": "Selected people will appear here",
+    "invitePeopleText": "Add users to your project. You can invite new people or select from those already invited to your workspace.",
+    "projectsLeftMessage_one": "You can create {{count}} more project",
+    "projectsLeftMessage_other": "You can create {{count}} more projects",
+    "deleteToCreateNew": "Delete a project to be able to create a new one",
+    "createNew": "Create a new project",
+    "changePath": "Change path",
+    "error": {
+      "empty": "You don't have any projects yet",
+      "createProject": "To get started, add a project"
+    },
+    "tag": {
+      "label": "Tags",
+      "single": "Tag",
+      "select": {
+        "label": "Select tags",
+        "single": "Select tag"
+      },
+      "create": "Create a tag",
+      "cancelCreation": "Cancel tag creation",
+      "enterName": "Enter tag name",
+      "tagsPlaceholder": "Your tags will appear here"
+    },
+    "permissions": {
+      "title": "Change permissions",
+      "edit": "Edit project",
+      "manageAdmins": "Add administrators",
+      "addUsers": "Add users",
+      "assigner": "Assign to task",
+      "createSubprojects": "Add subprojects",
+      "controller": "Controller",
+      "moveTasks": "Move tasks",
+      "openTasks": "Open tasks",
+      "removeUsers": "Remove user",
+      "categories": {
+        "generalRights": "General rights",
+        "folders": "Folders",
+        "sprints": "Sprints",
+        "reports": "Reports",
+        "usersAndAdmins": "Users and admins",
+        "tasks": "Tasks",
+        "tasksGeneral": "General",
+        "changeTaskRoles": "Change roles in task",
+        "changeTaskSettings": "Change settings in task",
+        "deleteInTask": "Delete in task",
+        "executeTask": "Execute task",
+        "tags": "Tags"
+      },
+      "actions": {
+        "listFolders": "View",
+        "createFolders": "Create",
+        "editFolders": "Edit",
+        "deleteFolders": "Delete",
+        "listTasks": "View",
+        "openTasks": "Open",
+        "createTasks": "Create",
+        "deleteTasks": "Delete",
+        "moveTasks": "Move",
+        "changeTaskAssigner": "Assigner",
+        "changeTaskExecutor": "Executor",
+        "manageTaskObservers": "Observers",
+        "editTaskTitle": "Title",
+        "editTaskDescription": "Description",
+        "editTaskDeadline": "Deadline",
+        "editTaskStatus": "Status",
+        "editTaskPriority": "Priority",
+        "editTaskTags": "Tags",
+        "editTaskTracking": "Time tracking",
+        "deleteTaskComments": "Comments",
+        "deleteTaskFile": "Files",
+        "executeTask": "Execute task",
+        "confirmExecuteTask": "Confirm task execution",
+        "listSprints": "View",
+        "createSprints": "Create",
+        "updateSprints": "Edit",
+        "deleteSprints": "Delete",
+        "listReports": "View",
+        "generateReports": "Create",
+        "deleteReports": "Delete",
+        "addUsers": "Add",
+        "removeUsers": "Remove",
+        "manageAdmins": "Manage administrators",
+        "createTags": "Create",
+        "updateTags": "Edit",
+        "deleteTags": "Delete",
+        "edit": "Edit",
+        "delete": "Delete"
+      }
+    },
+    "archive": {
+      "title": "Archived projects",
+      "count": "In archive"
+    },
+    "roles": {
+      "admin": "Admin",
+      "assigner": "Assigner",
+      "controller": "Controller",
+      "user": "User",
+      "guest": "Guest"
+    },
+    "rolesDescription": {
+      "admin": "Full access to all project features and settings",
+      "assigner": "Can assign tasks to other users",
+      "controller": "Reviews and approves task completion",
+      "user": "Can perform their own tasks and view general information",
+      "guest": "Limited access, can only view information without making changes"
+    },
+    "settings": {
+      "title": "Project settings",
+      "tabs": {
+        "general": "General",
+        "people": "People",
+        "tags": "Tags"
+      }
+    },
+    "projectStatuses": {
+      "active": "Active projects",
+      "archived": "Archived projects",
+      "deleted": "Deleted projects"
+    }
+  },
+  "workspace": {
+    "label": "Workspace",
+    "title": "Workspaces",
+    "leave": "Leave workspace",
+    "create": "Create workspace",
+    "new": "New workspace",
+    "added": "Add workspace",
+    "name": "Workspace name",
+    "enterName": "Enter workspace name",
+    "empty": "You don't have a workspace yet. Create your first workspace to create projects and manage tasks.",
+    "role": "Your role",
+    "owner": "Owner",
+    "creator": "Creator",
+    "deleteTitle": "Delete workspace",
+    "deleteBody": "This action will delete the workspace from your account. If you want to restore it, you will need to contact support.",
+    "confirmDelete": "Are you sure you want to delete",
+    "youLose": "You will lose:",
+    "cannotDeleteLast": "This is the last workspace. Add a new one to delete it.",
+    "invitedAdminsList": "Here will be the list of invited admins",
+    "roleCategories": {
+      "admin": "Admin",
+      "member": "Member"
+    },
+    "addAdmins": "Invite admins",
+    "permissions": {
+      "title": "Change permissions",
+      "edit": "Edit workspace",
+      "createProjects": "Add projects",
+      "editProjects": "Edit projects",
+      "deleteProjects": "Delete projects",
+      "manageAdmins": "Add administrators",
+      "delete": "Delete workspace"
+    },
+    "noProjects": "No projects yet",
+    "limitReached": "Workspace limit reached. Delete one to create a new workspace.",
+    "workspaceRemaining_one": "You can create {{count}} more workspace",
+    "workspaceRemaining_other": "You can create {{count}} more workspaces"
+  },
+  "user": {
+    "firstName": "First name",
+    "lastName": "Last name",
+    "middleName": "Middle name",
+    "fullName": "Name",
+    "dob": "Date of birth",
+    "phone": "Phone number",
+    "password": "Password",
+    "newPassword": "New password",
+    "email": "Email",
+    "username": "Username",
+    "role": "Role",
+    "showPassword": "Show password",
+    "noAccount": "Don't have an account yet?",
+    "alreadyRegistered": "Already registered?",
+    "continueAfterSignIn": " to continue",
+    "usernameOrEmail": "Username or email address",
+    "title": "Users",
+    "owner": "Owner",
+    "workspaceAdmin": "Админ рабочего пространства",
+    "you": "You",
+    "me": "Me",
+    "add": "Add user",
+    "userProfile": "User personal information",
+    "registrationDate": "Registration date",
+    "gender": {
+      "title": "Gender",
+      "unspecified": "Unspecified",
+      "female": "Female",
+      "male": "Male"
+    },
+    "about": "About me",
+    "firstAndLastName": "First and last name",
+    "accountInfoNotice": "This information will be displayed in your account",
+    "yourPersonalInfo": "Your personal information",
+    "updatePersonalInfo": "Here you can update your personal information and avatar"
+  },
+  "error": {
+    "title": "Title required",
+    "required": "Required"
+  },
+  "comment": {
+    "leaveComment": "Leave a comment",
+    "noComment": "No comments yet"
+  },
+  "sorter": {
+    "changeVariant": "Change sort options"
+  },
+  "priorities": {
+    "none": "No priority",
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low"
+  },
+  "board": {
+    "title": "The Board",
+    "new": "The new board"
+  },
+  "payment": {
+    "next": "Your next payment",
+    "current": "Current Plan",
+    "info": {
+      "title": "Payment information",
+      "empty": "You have not added a payment information yet",
+      "form": {
+        "name": "Name",
+        "surname": "Surname",
+        "address": "Address (city, street)",
+        "building": "Building",
+        "apt": "Office / apt",
+        "country": "Country",
+        "postcode": "Postcode"
+      }
+    },
+    "method": {
+      "title": "Payment method",
+      "empty": "You have not added a payment method",
+      "form": {
+        "card": "Card Number",
+        "date": "Expiration Date"
+      }
+    },
+    "history": {
+      "title": "Payment history",
+      "empty": "You have not made any payments.",
+      "table": {
+        "plan": "Plan",
+        "date": "Payment Date",
+        "months": "Months",
+        "status": "Status",
+        "price": "Price",
+        "payment": "Payment"
+      }
+    }
+  },
+  "folder": {
+    "foldersCount_one": "{{count}} folder",
+    "foldersCount_few": "{{count}} folders",
+    "foldersCount_many": "{{count}} folders",
+    "foldersCount_other": "{{count}} folders",
+    "title": "Folder",
+    "createNewFolder": "New folder",
+    "showAll": "Show all"
+  },
+  "invitation": {
+    "invitationSent": "An invitation has been sent to {{email}}",
+    "placeholder": "Enter the email to send the invitation",
+    "inviteButton": "Invite user",
+    "invitationRemaining_one": "You can invite {{count}} more user.",
+    "invitationRemaining_other": "You can invite {{count}} more users."
+  },
+  "tags": {
+    "title": "Tags",
+    "new": "New tag",
+    "searchByTags": "Search by tags",
+    "noSuchTags": "No tags found :(",
+    "noTagMessage": "But you can create it, <span>by clicking the button below</span>"
+  },
+  "notMobileApp": {
+    "title": "Small Screen Version",
+    "description": "Our service works best on larger screens for now. We’re already working on a mobile app and support for smaller resolutions — soon it will be convenient to use everywhere.",
+    "thankYou": "Thank you for your understanding!"
+  },
+  "passwordStrength": {
+    "title": "Complexity",
+    "description": "Must include:",
+    "requirements": {
+      "onlyLatin": "Latin characters only",
+      "minLength": "At least 6 characters",
+      "upperLowerCase": "At least 1 uppercase and 1 lowercase character",
+      "specialChar": "At least 1 special character"
+    },
+    "strength": {
+      "default": "",
+      "low": "Weak",
+      "medium": "Moderate",
+      "high": "Strong"
+    }
+  },
+  "appearance": {
+    "title": "Appearance Settings",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "selectTheme": "Select a theme for your interface",
+    "language": "Language",
+    "selectLanguage": "Select a language for your interface",
+    "taskId": "Task ID",
+    "taskIdDescription": "Show task ID next to task name"
+  },
+  "settings": {
+    "label": "System",
+    "appearance": "Appearance",
+    "safety": "Safety",
+    "support": "Support"
+  },
+  "safety": {
+    "title": "Safety Settings",
+    "changePassword": "Change password",
+    "changePasswordDescription": "Enter your current and new passwords. We recommend updating your password every 6 months.",
+    "changeEmail": "Change email",
+    "enterCode": "Enter code",
+    "checkEmailAndEnterCode": "Check your email and enter the confirmation code",
+    "enterEmailAndPasswords": "Enter your email, current password and new email.",
+    "emailConfirmationInfo": "Then a code will be sent to your email to confirm the change.",
+    "deleteAccount": "Delete account",
+    "deleteAccountDescription": "After deleting your account, all your data will be permanently erased. This action cannot be undone.",
+    "deleteAccountConfirmationMethod": "To confirm account deletion, choose a method",
+    "deleteByPassword": "Confirm deletion via password",
+    "deleteByCode": "Confirm deletion via code",
+    "irreversibleAction": "Irreversible action",
+    "deleteAccountWarning": "Deleting your account is irreversible. You will lose access to all data, histories, settings, and linked services. Make sure you understand the consequences.",
+    "byPassword": "By password",
+    "byPasswordDescription": "Enter your current password to confirm this action.",
+    "byEmail": "Via email",
+    "byEmailDescription": "Enter the code sent to your linked email to delete your account."
+  },
+  "notifications": {
+    "all": "All notifications",
+    "readAll": "Read all",
+    "notificationsCount_one": "{{count}} notification",
+    "notificationsCount_other": "{{count}} notifications",
+    "empty": "No notifications",
+    "deleted": "Notification deleted",
+    "newComment": "{{author}} added a comment to task {{taskName}}",
+    "newFile": "A new file was added to task {{taskName}}",
+    "statusChanged": "Task {{taskName}} status changed to {{detail}}",
+    "deadlineChanged": "Task {{taskName}} deadline changed to {{detail}}",
+    "priorityChanged": "Task {{taskName}} priority changed to {{detail}}",
+    "taskCompleted": "{{executor}} completed task {{taskName}}",
+    "assignedAsExecutor": "You were assigned as executor for task {{taskName}}",
+    "assignedAsAssigner": "You were assigned as assigner for task {{taskName}}",
+    "removedFromExecutor": "You are no longer an executor of task {{taskName}}",
+    "removedFromAssigner": "You are no longer an assigner of task {{taskName}}",
+    "taskDeleted": "Task {{taskName}} was deleted",
+    "taskMoved": "Task {{taskName}} was moved to project {{projectName}}",
+    "newSubtask": "A new subtask {{subtaskName}} was created under {{taskName}}",
+    "invitedToProject": "{{user}} invited you to project {{projectName}}",
+    "projectInvitationAccepted": "Invitation to project {{projectName}} accepted",
+    "projectInvitationAcceptedByUser": "{{user}} accepted the invitation to project {{projectName}}",
+    "projectInvitationDeclined": "Invitation to project {{projectName}} declined",
+    "projectInvitationDeclinedByUser": "{{user}} declined the invitation to project {{projectName}}",
+    "projectInvitationCancelled": "{{user}} cancelled your invitation to project {{projectName}}",
+    "invitedToWorkspace": "{{user}} invited you to workspace {{workspaceName}}",
+    "workspaceInvitationAccepted": "Invitation to workspace {{workspaceName}} accepted",
+    "workspaceInvitationAcceptedByUser": "{{user}} accepted the invitation to workspace {{workspaceName}}",
+    "workspaceInvitationDeclined": "Invitation to workspace {{workspaceName}} declined",
+    "workspaceInvitationDeclinedByUser": "{{user}} declined the invitation to workspace {{workspaceName}}",
+    "workspaceInvitationCancelled": "{{user}} cancelled your invitation to workspace {{workspaceName}}",
+    "taskCreated": "A new task {{taskName}} was created",
+    "unknown": "Unknown notification type"
+  },
+  "files": {
+    "filesFromDescription": "Here will be the files from the description",
+    "preview": "Preview",
+    "deleteFile": "Delete file",
+    "downloadFile": "Download file"
+  },
+  "time": {
+    "add": "Add time"
+  },
+  "legal": {
+    "title": "Legal Documents",
+    "description": "Here you can view all legal documents related to using the service. Click the button to review."
+  },
+  "kanban": {
+    "board": {
+      "duplicate": "Duplicate board",
+      "duplicateLoading": "Duplicating...",
+      "delete": "Delete board",
+      "rename": "Rename",
+      "changeColor": "Change color",
+      "deleteLoading": "Deleting...",
+      "moveTasks": "Move tasks",
+      "moveAllTasksFromStatus": "Move all tasks from this status",
+      "moveTasksQuestion": "Where should we move the tasks?"
+    }
+  }
+}

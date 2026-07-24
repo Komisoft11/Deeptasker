@@ -1,0 +1,19 @@
+{
+  "header_id": "ID",
+  "header_name": "Task Name",
+  "header_description": "Description",
+  "header_creator": "Creator",
+  "header_date_created": "Date Created",
+  "header_date_executed": "Date Executed",
+  "header_sprint": "Sprint",
+  "header_time_expired": "Time Expired",
+  "header_executor": "Executor",
+  "header_spent_time": "Time Spent",
+  "header_assigner": "Assigner",
+  "header_observers": "Observers",
+  "header_file_links": "File Links",
+  "header_tags": "Tags",
+  "header_date_deadline": "Deadline Date",
+  "header_time_estimate": "Time Estimate",
+  "header_status": "Task Status"
+}

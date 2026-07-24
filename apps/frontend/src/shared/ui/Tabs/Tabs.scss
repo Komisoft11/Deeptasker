@@ -1,0 +1,21 @@
+.DT_Tab_List {
+  @apply flex gap-2 relative justify-start items-start;
+}
+
+.DT_Tab_Trigger {
+  border-radius: 8px;
+  padding: 8px;
+  border: 1px solid transparent;
+
+  &[data-state='active'], &:hover:not([data-state='active']) {
+    background-color: var(--hover);
+  }
+
+  &[data-state='active'] {
+    border-color: var(--border);
+  }
+}
+
+
+
+

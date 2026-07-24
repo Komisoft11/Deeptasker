@@ -1,0 +1,21 @@
+.item {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--hover);
+  }
+
+  &[data-state='checked'] {
+    background: var(--accent);
+    color: var(--activeText)
+  }
+}

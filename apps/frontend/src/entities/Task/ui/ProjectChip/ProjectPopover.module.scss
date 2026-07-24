@@ -1,0 +1,30 @@
+.trigger {
+  @apply bg-hover w-[170px] p-2 hover:bg-hover hover:opacity-70;
+
+  &:disabled {
+    background-color: transparent;
+    border: 1px solid var(--border);
+  }
+}
+
+.dropdown {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.item {
+  border-radius: 8px;
+  padding: 8px;
+
+  &:hover:not(.active) {
+    cursor: pointer;
+    background-color: var(--hover);
+  }
+}
+
+.active {
+  background-color: var(--hover);
+}

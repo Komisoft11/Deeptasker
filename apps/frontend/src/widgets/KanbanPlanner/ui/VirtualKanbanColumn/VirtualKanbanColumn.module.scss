@@ -1,0 +1,8 @@
+.VirtualList {
+  gap: 8px;
+  padding: 8px;
+
+  > div {
+    overflow: hidden;
+  }
+}

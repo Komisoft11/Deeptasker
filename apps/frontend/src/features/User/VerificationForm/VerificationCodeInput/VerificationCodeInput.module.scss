@@ -1,0 +1,12 @@
+.input {
+  div {
+    max-height: 48px;
+    height: 48px;
+  }
+}
+
+.errors {
+  div {
+    outline: 1px solid var(--system-red);
+  }
+}

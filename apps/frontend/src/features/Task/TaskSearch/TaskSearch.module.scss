@@ -1,0 +1,40 @@
+.container {
+  @apply flex items-end relative w-full;
+
+  .button {
+    @apply flex items-center justify-center;
+    border-radius: 0 8px 8px 0;
+    height: 40px;
+    max-width: 120px;
+    width: 100%;
+  }
+}
+
+.input {
+  width: fit-content;
+
+  input {
+    max-width: 1034px;
+    transition: all ease-in .3s;
+  }
+
+  input:not(:focus), input[data-width='fit'] {
+    width: 240px;
+  }
+
+  input:focus, input[data-width='full'] {
+    width: 100vw;
+  }
+
+}
+
+.chips {
+  @apply flex gap-2;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 410px) {
+  .chips {
+    justify-content: space-between;
+  }
+}

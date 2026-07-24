@@ -1,0 +1,12 @@
+.kbd {
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid var(--text-second);
+  display: flex;
+  justify-content: center;
+  width: max-content;
+
+  &:hover {
+    cursor: default;
+  }
+}

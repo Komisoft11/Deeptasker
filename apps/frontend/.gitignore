@@ -1,0 +1,31 @@
+dnd-kit/
+photo_2024-07-11_11-44-58.jpg
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+node_modules
+dist
+dist-ssr
+*.local
+other_code/**/*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+tsconfig.tsbuildinfo
+.vite-cache
+.env
+!.env.example
+
+!src/shared/lib/helpers/log/**/*

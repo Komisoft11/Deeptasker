@@ -1,0 +1,10 @@
+{
+  "default_name": "Мое пространство",
+  "forbidden": "Действие не разрешено для этого рабочего пространства.",
+  "user_not_part_of_workspace": "Пользователь не добавлен в рабочее пространство.",
+  "user_is_owner_of_workspace": "Пользователь {{userId}} является владельцем рабочего пространства {{workspaceId}}.",
+  "cannot_remove_owner_of_workspace": "Невозможно удалить владельца рабочего пространства {{workspaceId}}.",
+  "cannot_update_permissions_of_workspace_owner": "Невозможно обновить разрешения владельца рабочего пространства: {{adminId}}.",
+  "user_is_not_admin_of_workspace": "Пользователь {{adminId}} не является администратором рабочего пространства: {{workspaceId}}.",
+  "too_many_workspaces_for_current_plan": "Слишком много рабочих пространств для текущего плана."
+}

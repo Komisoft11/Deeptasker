@@ -1,0 +1,22 @@
+.button {
+  @apply flex items-center justify-center p-3 gap-[6px]
+  text-[14px] leading-4;
+  border-radius: 8px;
+  background-color: var(--hover);
+  width: 50%;
+  color: white;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover, &:focus {
+    opacity: 0.9;
+  }
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.icon path {
+  fill: white;
+}

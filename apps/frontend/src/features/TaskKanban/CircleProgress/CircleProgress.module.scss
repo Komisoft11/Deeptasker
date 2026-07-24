@@ -1,0 +1,19 @@
+.circleProgressContainer {
+  display: inline-block;
+  position: relative;
+}
+
+.progressBackground {
+  fill: none;
+  stroke: var(--hover);
+  stroke-width: 2;
+}
+
+.progressBar {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  transition: stroke-dashoffset 0.3s ease, stroke 0.3s ease;
+}

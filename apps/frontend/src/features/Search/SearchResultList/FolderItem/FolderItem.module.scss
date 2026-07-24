@@ -1,0 +1,23 @@
+.body {
+  height: fit-content;
+  padding: 16px 16px 16px 8px;
+  border-radius: 8px;
+  background-color: var(--objects);
+}
+
+.item {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 8px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+
+  path {
+    fill: var(--text-second) !important;
+  }
+}

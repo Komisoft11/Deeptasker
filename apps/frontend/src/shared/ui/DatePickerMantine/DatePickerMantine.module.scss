@@ -1,0 +1,158 @@
+
+.wrapper {
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  gap: 4px;
+  background-color: var(--hover);
+  align-items: center;
+  padding-left: 12px;
+
+  :disabled {
+    cursor: not-allowed;
+  }
+}
+
+.section {
+  width: 32px;
+  height: 100%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+
+    svg {
+      width: 16px !important;
+      height: 16px !important;
+
+      path {
+        fill: var(--text-main);
+      }
+    }
+  }
+
+  &:hover {
+    background-color: var(--hover);
+    cursor: pointer;
+  }
+}
+
+
+.input {
+  padding: 8px 12px 8px 0;
+  width: 100%;
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 16px 12px 16px;
+}
+
+.calendarHeaderControl {
+  display: flex;
+  height: 36px;
+  width: 36px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: var(--objects);
+
+  &:hover {
+    background-color: var(--hover) !important;
+  }
+}
+
+.levelsGroup {
+  background-color: var(--objects);
+  width: 100%;
+}
+
+.calendarHeaderControlIcon {
+  width: 16px !important;
+  height: 16px !important;
+
+  &[data-direction='previous'] {
+    transform: rotate(90deg);
+  }
+
+  &[data-direction='next'] {
+    transform: rotate(-90deg);
+  }
+}
+
+.list {
+  width: 380px;
+  margin: 0 16px 16px 16px;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: var(--text-main);
+  margin: 4px;
+  box-sizing: border-box;
+  width: calc(100% - 8px);
+
+  &:not([data-selected]):not([data-in-range]):hover {
+    background-color: var(--hover);
+  }
+
+  &[data-today] {
+    color: var(--accent);
+  }
+
+
+  &[data-outside] {
+    color: var(--text-second);
+  }
+
+  &[data-selected] {
+    background-color: var(--accent);
+    color: var(--text-main);
+  }
+
+  &[data-in-range] {
+    background-color: var(--accent-range);
+
+    &[data-today] {
+      color: var(--text-main);
+    }
+  }
+
+  &[data-first-in-range], &[data-last-in-range] {
+    background-color: var(--accent);
+    color: #EFEFEFFF;
+  }
+}
+
+.presetsList {
+  background-color: var(--objects);
+  margin: 0;
+  border-right: 1px solid var(--hover);
+  border-radius: 8px 0 0 8px;
+  padding: 16px 16px 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.presetButton {
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 8px;
+  padding: 8px;
+
+  &:hover {
+    background-color: var(--hover);
+  }
+}

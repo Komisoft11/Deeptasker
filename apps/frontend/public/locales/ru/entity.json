@@ -1,0 +1,611 @@
+{
+  "task": {
+    "tasksCount_one": "{{count}} задача",
+    "tasksCount_few": "{{count}} задачи",
+    "tasksCount_many": "{{count}} задач",
+    "tasksCount_other": "{{count}} задач",
+    "subtasksCount_one": "{{count}} подзадача",
+    "subtasksCount_few": "{{count}} подзадачи",
+    "subtasksCount_many": "{{count}} подзадач",
+    "subtasksCount_other": "{{count}} подзадач",
+    "subtasksCompleted_one": "{{count}} завершена",
+    "subtasksCompleted_few": "{{count}} завершены",
+    "subtasksCompleted_many": "{{count}} завершено",
+    "subtasksCompleted_other": "{{count}} завершено",
+    "title": "Задачи",
+    "taskName": "Название задачи",
+    "author": "Автор",
+    "created": "Создана",
+    "info": {
+      "subtasks": "Подзадачи",
+      "description": "Описание",
+      "completedSubtasksPercentage": "Выполнено: {{percentage}}% ({{executedCountTask}} из {{totalSubtasks}} подзадач)",
+      "subtasksPlaceholder": "Здесь будут ваши подзадачи",
+      "empty": "Отслеживайте задачи, следите за ходом\nих выполнения и обсуждайте детали в общем проекте",
+      "title": "Название обязательно",
+      "addTask": "Добавить задачу",
+      "addTasks": "Добавить задачи",
+      "addTaskAndOpen": "Добавить и открыть",
+      "addSubtask": "Добавить подзадачу",
+      "enterNameTask": "Введите название задачи",
+      "enterNameParentTask": "Введите название родительской задачи",
+      "addDescription": "Добавить описание",
+      "assigner": "Ответственный",
+      "executor": "Исполнитель",
+      "observers": "Наблюдатели",
+      "priority": "Приоритет",
+      "deadline": "Дедлайн",
+      "status": "Статус",
+      "createTask": "Создать задачу",
+      "assign": "Назначить",
+      "dateStart": "Дата начала",
+      "sprint": "Спринт",
+      "timeEstimate": "Оценка времени",
+      "timeSpent": "Затраченное время"
+    },
+    "subtasks": {
+      "show": "Показать подзадачи",
+      "hide": "Скрыть подзадачи",
+      "create": "Создать подзадачу"
+    },
+    "taskStatus": {
+      "title": "Статус",
+      "completed": "Выполненные",
+      "uncompleted": "Невыполненные"
+    },
+    "statuses": {
+      "open": "Открыто",
+      "process": "В работе",
+      "executed": "Выполнено",
+      "review": "На проверке",
+      "input": "Начните вводить статус"
+    },
+    "enterTaskName": "Введите имя задачи",
+    "notAssigned": "Не назначено",
+    "reorder": "Переместить",
+    "moveToTask": "Перейти к задаче",
+    "associatedTasks": "Привязанные задачи",
+    "parentTasks": "Родительские задачи",
+    "link": "Ссылка на задачу",
+    "untie": "Отвязать",
+    "completedTasks": "Выполненные задачи",
+    "moveTask": "Переместить задачу",
+    "move": {
+      "toFolder": "В папку",
+      "toTask": "В другую задачу",
+      "backToRootTasks": "Вернуть в рутовые задачи",
+      "backToRootFolder": "Вернуть в рутовую папку",
+      "folder": "Папка",
+      "subfolder": "Подпапка",
+      "task": "Задача",
+      "subtask": "Подзадача"
+    },
+    "observer": "Наблюдатель",
+    "comments": {
+      "errorRequired": "Заполните комментарий",
+      "addComment": "Добавить комментарий",
+      "commentsPlaceholder": "Здесь будут комментарии к вашей задаче"
+    },
+    "error": {
+      "empty": "В этом проекте ещё нет задач"
+    },
+    "change": "Изменил(а) задачу",
+    "overdue": "Просроченные задачи",
+    "delete": "Удалить задачу",
+    "quickAddTask": "Быстрое добавление задачи",
+    "newTaskCreation": "Создание новой задачи",
+    "addingTaskToSprint": "Добавление задачи в спринт",
+    "sections": {
+      "general": "Основная информация",
+      "dates": "Даты",
+      "time": "Учёт времени",
+      "people": "Люди"
+    },
+    "showCompleted": "Показать завершённые",
+    "copyLink": "Скопировать ссылку на задачу"
+  },
+  "planner": {
+    "title": "Планировщик",
+    "noExecutor": "Нет исполнителя"
+  },
+  "focus": {
+    "title": "Фокус",
+    "on": "Режим фокуса"
+  },
+  "report": {
+    "create": "Создать отчёт",
+    "title": "Отчёты",
+    "createForm": {
+      "title": "Создание отчёта",
+      "instructions": "Выберите необходимые пункты для создания отчёта. После этого вы сможете его скачать.",
+      "enterName": "Введите название отчёта",
+      "fileFormat": "Формат файла",
+      "taskStatus": "Статус задач для отчёта",
+      "periodSelect": {
+        "placeholder": "Выберите период, за который сформировать отчёт",
+        "lastWeek": "За последнюю неделю",
+        "lastMonth": "За последний месяц",
+        "lastYear": "За последний год",
+        "custom": "Выбрать период"
+      },
+      "noProjectReportsAccess": "У вас нет доступа к отчётам этого проекта."
+    },
+    "statuses": {
+      "pending": "Загружается",
+      "completed": "Успешно",
+      "error": "Ошибка",
+      "in_progress": "В процессе"
+    }
+  },
+  "sprints": {
+    "title": "Спринты",
+    "createNew": "Создать новую",
+    "addExisting": "Добавить существующую",
+    "sprintTasksPlaceholder": "Здесь будут задачи по спринту",
+    "selectSprint": "Выберите спринт",
+    "addSprint": " Добавить спринт",
+    "statuses": {
+      "active": "Активный",
+      "planned": "Планируемый",
+      "completed": "Завершен"
+    },
+    "activeSprints": "Активные спринты",
+    "plannedSprints": "Предстоящие спринты",
+    "completedSprints": "Завершенные спринты",
+    "noData": "Нет данных о спринтах",
+    "noTasks": "Нет задач",
+    "addingNewSprint": "Добавление нового спринта",
+    "enterNewSprintName": "Введите название нового спринта",
+    "period": "Период"
+  },
+  "profile": {
+    "title": "Профиль",
+    "nav": {
+      "info": "Мой аккаунт",
+      "security": "Безопасность",
+      "payment": "Платежи"
+    },
+    "content": {
+      "info": "Ваша личная информация",
+      "security": "Измените свой пароль",
+      "payment": "Платежи и платежная информация"
+    },
+    "warning": {
+      "title": "Внимание!",
+      "password": "Вы меняете пароль!"
+    },
+    "error": {
+      "required": "Это поле не может быть пустым",
+      "min": "Имя должно быть длиннее или равно 3 символам",
+      "email": "Это не email :(",
+      "password": "Пароль не верен",
+      "newPassword": "Плохой пароль, придумайте другой"
+    }
+  },
+  "project": {
+    "title": "Проекты",
+    "single": "Проект",
+    "projectsCount_one": "{{count}} проект",
+    "projectsCount_few": "{{count}} проекта",
+    "projectsCount_many": "{{count}} проектов",
+    "projectsCount_other": "{{count}} проектов",
+    "leave": "Уйти с проекта",
+    "search": "Поиск по проектам",
+    "create": "Создать проект",
+    "firstCreate": "Создать свой первый проект",
+    "new": "Новый проект",
+    "name": "Название проекта",
+    "enterName": "Введите название проекта",
+    "deleting": "Удаление проекта",
+    "delete": "Проект удален",
+    "deleteBody": "Вы уверены, что хотите удалить {{projectName}}?",
+    "deleteTitle": "Типо точно хочешь удалить",
+    "deleteButton": "Удалить проект",
+    "deleteProjectDescription": "Это действие удалит проект. Если вы захотите его восстановить, необходимо будет перейти в удалённые проекты и восстановить его.",
+    "youWillLose": "Вы потеряете:",
+    "invitePeople": "Пригласить людей",
+    "invitedPeopleList": "Здесь будут выбранные люди",
+    "invitePeopleText": " Добавьте пользователей в ваш проект. Вы можете пригласить новых людей\n          или выбрать из уже приглашенных в ваше рабочее пространство.",
+    "projectsLeftMessage_one": "Вы можете создать ещё {{count}} проект",
+    "projectsLeftMessage_few": "Вы можете создать ещё {{count}} проекта",
+    "projectsLeftMessage_many": "Вы можете создать ещё {{count}} проектов",
+    "projectsLeftMessage_other": "Вы можете создать ещё {{count}} проектов",
+    "deleteToCreateNew": "Удалите какой-нибудь проект, чтобы появилась возможность создать новый",
+    "createNew": "Создание нового проекта",
+    "changePath": "Изменить путь",
+    "error": {
+      "empty": "У вас ещё нет проектов",
+      "createProject": "Для начала работы, добавьте проект"
+    },
+    "tag": {
+      "label": "Теги",
+      "single": "Тег",
+      "select": {
+        "label": "Выбрать теги",
+        "single": "Выбрать тег"
+      },
+      "create": "Создать тег",
+      "cancelCreation": "Отменить создание тега",
+      "enterName": "Введите название тега",
+      "tagsPlaceholder": "Здесь будут ваши теги"
+    },
+    "permissions": {
+      "title": "Изменить права",
+      "edit": "Изменение проекта",
+      "manageAdmins": "Добавление администраторов",
+      "addUsers": "Добавление пользователей",
+      "assigner": "Назначать на задачу",
+      "createSubprojects": "Добавление подпроектов",
+      "controller": "Контролер",
+      "moveTasks": "Перемещение задач",
+      "openTasks": "Открытие задач",
+      "removeUsers": "Удаление пользователя",
+      "categories": {
+        "generalRights": "Общие права",
+        "folders": "Папки",
+        "sprints": "Спринты",
+        "reports": "Отчёты",
+        "usersAndAdmins": "Пользователи и админы",
+        "tasks": "Задачи",
+        "tasksGeneral": "Общее",
+        "changeTaskRoles": "Изменять роли в задаче",
+        "changeTaskSettings": "Изменять настройки в задаче",
+        "deleteInTask": "Удалять в задаче",
+        "executeTask": "Выполнение задачи",
+        "tags": "Теги"
+      },
+      "actions": {
+        "listFolders": "Просматривать",
+        "createFolders": "Создавать",
+        "editFolders": "Изменять",
+        "deleteFolders": "Удалять",
+        "listTasks": "Просматривать",
+        "openTasks": "Открывать",
+        "createTasks": "Создавать",
+        "deleteTasks": "Удалять",
+        "moveTasks": "Перемещать",
+        "changeTaskAssigner": "Ответственный",
+        "changeTaskExecutor": "Исполнитель",
+        "manageTaskObservers": "Наблюдатели",
+        "editTaskTitle": "Название",
+        "editTaskDescription": "Описание",
+        "editTaskDeadline": "Дедлайн",
+        "editTaskStatus": "Статус",
+        "editTaskPriority": "Приоритет",
+        "editTaskTags": "Теги",
+        "editTaskTracking": "Время выполнения",
+        "deleteTaskComments": "Комментарии",
+        "deleteTaskFile": "Файлы",
+        "executeTask": "Выполнять задачу",
+        "confirmExecuteTask": "Подтверждать выполнение задачи",
+        "listSprints": "Просматривать",
+        "createSprints": "Создавать",
+        "updateSprints": "Изменять",
+        "deleteSprints": "Удалять",
+        "listReports": "Просматривать",
+        "generateReports": "Создавать",
+        "deleteReports": "Удалять",
+        "addUsers": "Добавлять",
+        "removeUsers": "Удалять",
+        "manageAdmins": "Управление администраторами",
+        "createTags": "Создавать",
+        "updateTags": "Изменять",
+        "deleteTags": "Удалять",
+        "edit": "Изменять",
+        "delete": "Удалять"
+      }
+    },
+    "archive": {
+      "title": "Архивные проекты",
+      "count": "В архиве"
+    },
+    "roles": {
+      "admin": "Админ",
+      "assigner": "Назначающий",
+      "controller": "Контролёр",
+      "user": "Пользователь",
+      "guest": "Гость"
+    },
+    "rolesDescription": {
+      "admin": "Полный доступ ко всем функциям и настройкам проекта",
+      "assigner": "Может назначать задачи другим пользователям",
+      "controller": "Проверяет и подтверждает выполнение задач",
+      "user": "Может выполнять свои задачи и видеть общую информацию",
+      "guest": "Ограниченный доступ, только просмотр информации без возможности изменения"
+    },
+    "settings": {
+      "title": "Настройка проекта",
+      "tabs": {
+        "general": "Общее",
+        "people": "Люди",
+        "tags": "Теги"
+      }
+    },
+    "projectStatuses": {
+      "active": "Активные проекты",
+      "archived": "Архивные проекты",
+      "deleted": "Удаленные проекты"
+    }
+  },
+  "workspace": {
+    "label": "Рабочее пространство",
+    "title": "Рабочие пространства",
+    "leave": "Уйти из рабочего пространства",
+    "create": "Создать пространство",
+    "new": "Новое рабочие пространство",
+    "added": "Добавить рабочее пространство",
+    "name": "Название рабочего пространства",
+    "enterName": "Введите название рабочего пространства",
+    "empty": "У вас пока нет рабочего пространства. Создайте своё первое рабочее пространство, чтобы создавать проекты и управлять задачами.",
+    "role": "Ваша роль",
+    "owner": "Владелец",
+    "creator": "Создатель",
+    "deleteTitle": "Удалить рабочее пространство",
+    "deleteBody": "Это действие удалит рабочее пространство с вашего аккаунта. Если вы захотите его восстановить, необходимо будет обратиться в поддержку.",
+    "confirmDelete": "Вы уверены, что вы хотите удалить",
+    "youLose": "Вы потеряете:",
+    "cannotDeleteLast": "Это последнее рабочее пространство. Добавьте новое, чтобы его удалить.",
+    "invitedAdminsList": "Здесь будет список приглашенных админов",
+    "roleCategories": {
+      "admin": "Админ",
+      "member": "Участник"
+    },
+    "addAdmins": "Пригласить админов",
+    "permissions": {
+      "title": "Изменить права",
+      "edit": "Изменение рабочего пространства",
+      "createProjects": "Добавление проектов",
+      "editProjects": "Изменение проектов",
+      "deleteProjects": "Удаление проектов",
+      "manageAdmins": "Добавление администраторов",
+      "delete": "Удаление рабочего пространства"
+    },
+    "noProjects": "Проектов пока нет",
+    "limitReached": "Достигнут лимит рабочих пространств. Удалите одно, чтобы создать новое.",
+    "workspaceRemaining_one": "Вы можете создать ещё {{count}} рабочее пространство",
+    "workspaceRemaining_few": "Вы можете создать ещё {{count}} рабочих пространства",
+    "workspaceRemaining_many": "Вы можете создать ещё {{count}} рабочих пространств"
+  },
+  "user": {
+    "firstName": "Имя",
+    "lastName": "Фамилия",
+    "middleName": "Отчество",
+    "fullName": "Имя",
+    "dob": "Дата рождения",
+    "phone": "Номер телефона",
+    "password": "Пароль",
+    "newPassword": "Новый пароль",
+    "email": "Электронная почта",
+    "username": "Имя пользователя",
+    "role": "Роль",
+    "showPassword": "Показать пароль",
+    "noAccount": "Ещё нет аккаунта?",
+    "alreadyRegistered": "Уже зарегистрированы?",
+    "continueAfterSignIn": ", чтобы продолжить",
+    "usernameOrEmail": "Имя пользователя или почтовый ящик",
+    "title": "Пользователи",
+    "you": "Вы",
+    "me": "Я",
+    "owner": "Владелец",
+    "workspaceAdmin": "Админ рабочего пространства",
+    "add": "Добавить пользователя",
+    "userProfile": "Личная информация пользователя",
+    "registrationDate": "Дата регистрации",
+    "gender": {
+      "title": "Пол",
+      "unspecified": "Не указано",
+      "female": "Женский",
+      "male": "Мужской"
+    },
+    "about": "О себе",
+    "firstAndLastName": "Имя и фамилия",
+    "accountInfoNotice": "Эта информация будет отображаться в вашем аккаунте",
+    "yourPersonalInfo": "Ваша личная информация",
+    "updatePersonalInfo": "Здесь вы можете обновить вашу личную информацию и аватар"
+  },
+  "error": {
+    "title": "Название обязательно",
+    "required": "Обязательно"
+  },
+  "comment": {
+    "leaveComment": "Оставить комментарий",
+    "noComment": "Нет комментариев"
+  },
+  "sorter": {
+    "changeVariant": "Поменять варианты сортировки"
+  },
+  "priorities": {
+    "none": "Без приоритета",
+    "high": "Высокий",
+    "medium": "Средний",
+    "low": "Низкий"
+  },
+  "board": {
+    "title": "Доска",
+    "new": "Новая доска"
+  },
+  "payment": {
+    "next": "Ваш следующий платеж",
+    "current": "Текущий план",
+    "info": {
+      "title": "Платёжная информация",
+      "empty": "Вы ещё не добавили платёжную информацию.",
+      "form": {
+        "name": "Имя",
+        "surname": "Фамилия",
+        "address": "Адрес (город, улица)",
+        "building": "Номер дома",
+        "apt": "Номер офиса / квартиры",
+        "country": "Страна",
+        "postcode": "Почтовый индекс"
+      }
+    },
+    "method": {
+      "title": "Метод оплаты",
+      "empty": "Вы ещё не добавили метод оплаты.",
+      "form": {
+        "card": "Номер карты",
+        "date": "Срок действия"
+      }
+    },
+    "history": {
+      "title": "История оплаты",
+      "empty": "Вы ещё не совершали оплат.",
+      "table": {
+        "plan": "План",
+        "date": "Дата платежа",
+        "months": "Месяцы",
+        "status": "Статус",
+        "price": "Цена",
+        "payment": "Платеж"
+      }
+    }
+  },
+  "folder": {
+    "foldersCount_one": "{{count}} папка",
+    "foldersCount_few": "{{count}} папки",
+    "foldersCount_many": "{{count}} папок",
+    "foldersCount_other": "{{count}} папки",
+    "title": "Папка",
+    "createNewFolder": "Новая папка",
+    "showAll": "Показать все"
+  },
+  "invitation": {
+    "invitationSent": "Приглашение отправлено на почту {{email}}",
+    "placeholder": "Введите почту для отправки приглашения",
+    "inviteButton": "Пригласить пользователя",
+    "invitationRemaining_one": "Вы можете пригласить ещё {{count}} пользователя",
+    "invitationRemaining_few": "Вы можете пригласить ещё {{count}} пользователей",
+    "invitationRemaining_many": "Вы можете пригласить ещё {{count}} пользователей",
+    "invitationRemaining_other": "Вы можете пригласить ещё {{count}} пользователя"
+  },
+  "tags": {
+    "title": "Теги",
+    "new": "Новый тег",
+    "searchByTags": "Поиск по тегам",
+    "noSuchTags": "Таких тегов ещё нет :(",
+    "noTagMessage": "Но вы можете создать его, <br>нажав на кнопку ниже"
+  },
+  "notMobileApp": {
+    "title": "Версия для маленьких экранов",
+    "description": "Наш сервис пока лучше работает на больших экранах. Мы уже готовим мобильное приложение и оптимизированную версию для маленьких экранов — скоро пользоваться будет удобно везде.",
+    "thankYou": "Спасибо за понимание!"
+  },
+  "passwordStrength": {
+    "title": "Сложность",
+    "description": "Должен содержать:",
+    "requirements": {
+      "onlyLatin": "Только латиница",
+      "minLength": "Минимум 6 символов",
+      "upperLowerCase": "Минимум 1 символ в верхнем и нижнем регистре",
+      "specialChar": "Минимум 1 специальный знак"
+    },
+    "strength": {
+      "default": "",
+      "low": "Низкая",
+      "medium": "Средняя",
+      "high": "Высокая"
+    }
+  },
+  "appearance": {
+    "title": "Настройка внешнего вида",
+    "theme": "Тема",
+    "light": "Светлая",
+    "dark": "Тёмная",
+    "selectTheme": "Выберите тему для вашего интерфейса",
+    "language": "Язык",
+    "selectLanguage": "Выберите язык для вашего интерфейса",
+    "taskId": "ID задачи",
+    "taskIdDescription": "Показывать ID задачи рядом с названием"
+  },
+  "settings": {
+    "label": "Системные",
+    "appearance": "Внешний вид",
+    "safety": "Безопасность",
+    "support": "Поддержка"
+  },
+  "safety": {
+    "title": "Настройка безопасности",
+    "changePassword": "Изменение пароля",
+    "changePasswordDescription": "Введите текущий и новый пароли. Рекомендуем обновлять пароль каждые 6 месяцев.",
+    "changeEmail": "Изменение email",
+    "enterCode": "Введите код",
+    "checkEmailAndEnterCode": "Проверьте почту и введите подтверждающий код",
+    "enterEmailAndPasswords": "Введите вашу почту, текущий пароль и новый email. ",
+    "emailConfirmationInfo": "Затем на вашу почту придёт код для подтверждения изменения.",
+    "deleteAccount": "Удалить аккаунт",
+    "deleteAccountDescription": "После удаления аккаунта все ваши данные будут безвозвратно удалены. Это действие нельзя будет отменить.",
+    "deleteAccountConfirmationMethod": "Для подтверждения удаления аккаунта выберите способ",
+    "deleteByPassword": "Подтверждение удаления по паролю",
+    "deleteByCode": "Подтверждение удаления по коду",
+    "irreversibleAction": "Необратимое действие",
+    "deleteAccountWarning": "Удаление аккаунта – это необратимое действие. Вы потеряете доступ ко всем данным, историям, настройкам и привязанным сервисам. Убедитесь, что вы понимаете последствия.",
+    "byPassword": "По паролю",
+    "byPasswordDescription": "Введите ваш текущий пароль для подтверждения действия.",
+    "byEmail": "Через почту",
+    "byEmailDescription": "Введите код, отправленный на ваш привязанный email для удаления."
+  },
+  "notifications": {
+    "all": "Все уведомления",
+    "notificationsCount_one": "{{count}} уведомление",
+    "notificationsCount_few": "{{count}} уведомления",
+    "notificationsCount_many": "{{count}} уведомлений",
+    "notificationsCount_other": "{{count}} уведомлений",
+    "readAll": "Прочитать все",
+    "empty": "Нет уведомлений",
+    "deleted": "Уведомление удалено",
+    "newComment": "{{author}} добавил(а) комментарий к задаче {{taskName}}",
+    "newFile": "Добавлен файл к задаче {{taskName}}",
+    "statusChanged": "Был изменён статус задачи {{taskName}} на {{status}}",
+    "deadlineChanged": "Был изменён дедлайн задачи {{taskName}} на {{date}}",
+    "priorityChanged": "Был изменён приоритет задачи {{taskName}} на {{priority}}",
+    "taskCompleted": "{{executor}} завершил выполнение задачи {{taskName}}",
+    "assignedAsExecutor": "Вы назначены исполнителем задачи {{taskName}}",
+    "assignedAsAssigner": "Вы назначены ответственным в задаче {{taskName}}",
+    "removedFromExecutor": "Вы больше не являетесь исполнителем задачи {{taskName}}",
+    "removedFromAssigner": "Вы больше не являетесь ответственным в задаче {{taskName}}",
+    "taskDeleted": "Задача {{taskName}} была удалена",
+    "taskMoved": "Задача {{taskName}} была перемещена в проект {{projectName}}",
+    "newSubtask": "Была создана новая подзадача: {{subtaskName}} в {{taskName}}",
+    "invitedToProject": "{{user}} пригласил(а) вас в проект {{projectName}}",
+    "projectInvitationAccepted": "Приглашение в проект {{projectName}} принято",
+    "projectInvitationDeclined": "Приглашение в проект {{projectName}} отклонено",
+    "projectInvitationCancelled": "{{user}} отменил(а) ваше приглашение в проект {{projectName}}",
+    "invitedToWorkspace": "{{user}} пригласил(а) вас в рабочее пространство {{workspaceName}}",
+    "workspaceInvitationAccepted": "Приглашение в рабочее пространство {{workspaceName}} принято",
+    "workspaceInvitationDeclined": "Приглашение в рабочее пространство {{workspaceName}} отклонено",
+    "workspaceInvitationCancelled": "{{user}} отменил ваше приглашение в рабочее пространство {{workspaceName}}",
+    "taskCreated": "Была создана задача: {{taskName}}",
+    "projectInvitationAcceptedByUser": "{{user}} принял(а) приглашение в проект {{projectName}}",
+    "projectInvitationDeclinedByUser": "{{user}} отклонил(а) приглашение в проект {{projectName}}",
+    "workspaceInvitationAcceptedByUser": "{{user}} принял(а) приглашение в рабочее пространство {{workspaceName}}",
+    "workspaceInvitationDeclinedByUser": "{{user}} отклонил(а) приглашение в рабочее пространство {{workspaceName}}",
+    "unknown": "Неизвестный тип уведомления"
+  },
+  "files": {
+    "filesFromDescription": "Здесь будут файлы из описания",
+    "preview": "Превью",
+    "deleteFile": "Удалить файл",
+    "downloadFile": "Скачать файл"
+  },
+  "time": {
+    "add": "Добавить время"
+  },
+  "legal": {
+    "title": "Юридические документы",
+    "description": "Здесь вы можете просмотреть все юридические документы, связанные с использованием сервиса. Для ознакомления нажмите на кнопку рядом."
+  },
+  "kanban": {
+    "board": {
+      "duplicate": "Дублировать доску",
+      "duplicateLoading": "Дублирование...",
+      "delete": "Удалить доску",
+      "rename": "Изменить название",
+      "changeColor": "Изменить цвет",
+      "deleteLoading": "Удаление...",
+      "moveTasks": "Переместить задачи",
+      "moveAllTasksFromStatus": "Переместить все задачи из этого статуса",
+      "moveTasksQuestion": "Куда переместить задачи?"
+    }
+  }
+}

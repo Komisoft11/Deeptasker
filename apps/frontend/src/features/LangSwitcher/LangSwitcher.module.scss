@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.button {
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--border);
+  color: var(--text-main);
+  background-color: transparent;
+  transition: background-color 0.2s;
+}
+
+.button:hover:not(.selected) {
+  background-color: var(--hover);
+  cursor: pointer;
+}
+
+.selected {
+  background-color: var(--accent);
+  border: 1px solid transparent;
+  color: var(--activeText);
+}
+
+@media (max-width: 1919px) {
+  .button {
+    padding: 8px 24px;
+  }
+
+}

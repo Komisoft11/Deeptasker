@@ -1,0 +1,51 @@
+.form {
+  width: 450px;
+  max-width: 100%;
+  @apply flex flex-col gap-4;
+}
+
+.password {
+  position: relative;
+
+  svg {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    height: 16px;
+    width: 16px;
+    opacity: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+
+  &:hover, &:focus-within {
+    svg {
+      opacity: 1;
+    }
+  }
+}
+
+
+.error {
+  div {
+    outline: 1px solid var(--system-red);
+
+    &:focus-within {
+      outline: 1px solid var(--system-red);
+    }
+  }
+}
+
+.text {
+  @apply flex flex-col gap-2
+  text-center;
+  overflow-wrap: break-word;
+
+  p {
+    word-wrap: break-word;
+  }
+}
+

@@ -1,0 +1,25 @@
+.button {
+  padding: 10px;
+  transition: all .3s ease;
+  border-color: transparent;
+  gap: 0 !important;
+  background-color: transparent !important;
+}
+
+.active, .button:hover {
+  background-color: var(--objects) !important;
+}
+
+.iconContainer {
+  position: relative;
+}
+
+.dot {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--system-red);
+}

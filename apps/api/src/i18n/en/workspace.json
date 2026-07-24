@@ -1,0 +1,10 @@
+{
+  "default_name": "My workspace",
+  "forbidden": "Action not allowed for user for this workspace.",
+  "user_not_part_of_workspace": "User not part of workspace.",
+  "user_is_owner_of_workspace": "User {{userId}} is owner of workspace {{workspaceId}}.",
+  "cannot_remove_owner_of_workspace": "Cannot remove owner of workspace {{workspaceId}}.",
+  "cannot_update_permissions_of_workspace_owner": "Cannot update permissions of workspace owner: {{adminId}}.",
+  "user_is_not_admin_of_workspace": "User {{adminId}} is not admin of workspace: {{workspaceId}}.",
+  "too_many_workspaces_for_current_plan": "Too many workspaces for current plan."
+}

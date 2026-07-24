@@ -1,0 +1,38 @@
+.item {
+  padding: 4px 16px 4px 8px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  border-bottom: 1px solid var(--hover);
+  gap: 12px;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.title {
+  flex: 1 1 auto;
+  max-width: 450px;
+  display: flex;
+  width: 100%;
+
+  button {
+    display: none;
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+}
+
+.name {
+  button {
+    display: none;
+  }
+}

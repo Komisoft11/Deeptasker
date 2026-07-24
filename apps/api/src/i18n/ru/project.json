@@ -1,0 +1,18 @@
+{
+  "created": "Проект создан",
+  "slug_exists": "Такое короткое имя уже существует",
+  "title_exist": "Такое название уже существует",
+  "not_found": "Проект не найден",
+  "forbidden": "Нет доступа к проекту",
+  "not_found_or_no_access": "Проект не найден или нет доступа",
+  "too_many_projects_upgrade_plan": "Слишком много проектов, обновите план",
+  "too_many_users_in_project": "Слишком много пользователей в проекте, обновите план",
+  "you_do_not_have_access_to_project_to_make_it_a_parent": "У вас нет доступа к проекту {{parentId}}, чтобы сделать его родительским.",
+  "user_is_owner_of_project": "Пользователь {{userId}} является владельцем проекта {{projectId}}.",
+  "user_is_admin_of_project_workspace": "Пользователь является администратором рабочего пространства проекта {{workspaceId}}.",
+  "user_is_not_part_of_project" : "Пользователь {{username}} не является участником проекта {{title}}",
+  "cannot_remove_admin_access_is_owner_of_project": "Невозможно удалить доступ администратора: {{username}} является владельцем проекта.",
+  "user_is_not_admin_of_project": "Пользователь {{username}} не является администратором проекта {{title}}",
+  "project_workspace_does_not_match_requested_workspace": "Рабочее пространство проекта не соответствует запрошенной рабочей области",
+  "default_name": "Новый проект"
+}

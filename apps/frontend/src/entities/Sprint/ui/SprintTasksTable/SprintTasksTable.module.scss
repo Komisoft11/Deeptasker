@@ -1,0 +1,22 @@
+.row {
+  grid-template-columns: 1fr 150px 1fr 1fr 1fr 62px;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--objects) !important;
+
+}
+
+.header {
+  @extend .row;
+}
+
+.cell[data-cell='title'] {
+  border-radius: 8px;
+  padding-right: 8px;
+  margin-left: 4px;
+
+  &:hover {
+    background-color: var(--hover);
+    cursor: pointer;
+
+  }
+}

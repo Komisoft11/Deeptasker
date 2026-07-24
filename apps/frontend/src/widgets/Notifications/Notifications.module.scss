@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.notifications {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dateSortedContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.new {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.length {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 2px 7.5px;
+  background-color: var(--hover);
+  border-radius: 4px;
+}
+
+.line {
+  height: 1px;
+  background-color: var(--border);
+  width: 100%;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}

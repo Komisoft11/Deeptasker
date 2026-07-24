@@ -1,0 +1,14 @@
+.deadline {
+  input {
+    text-align: left;
+  }
+}
+
+.fullWidth {
+  width: 100%;
+  flex-direction: column;
+
+  p {
+    width: 100%;
+  }
+}

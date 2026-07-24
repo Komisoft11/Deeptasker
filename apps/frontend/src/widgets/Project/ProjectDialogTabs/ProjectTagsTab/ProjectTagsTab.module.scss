@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  overflow-y: auto;
+  flex: 1 0 0;
+  padding: 0 16px;
+}
+
+.new {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  max-width: 120px;
+  padding: 10px 12px !important;
+  font-weight: 400;
+  font-size: 14px !important;
+  line-height: 16px;
+}
+
+.icon {
+  fill: var(--white);
+}
+
+

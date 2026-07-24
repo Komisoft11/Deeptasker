@@ -1,0 +1,7 @@
+{
+  "template": "You're receiving this email because of your account on",
+  "warning": "This email is automatically generated, please do not reply to it.",
+  "accept": "Accept",
+  "decline": "Decline",
+  "fallback": "If the buttons above don’t work, use the links below:"
+}

@@ -1,0 +1,35 @@
+.DT_Switch_Root {
+  width: 44px;
+  height: 24px;
+  background-color: transparent;
+  border: 1px solid var(--text-main);
+  border-radius: 24px;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  &[data-state='checked'] {
+    background-color: var(--accent);
+    border-color: transparent;
+  }
+
+  &[data-disabled] {
+    cursor: not-allowed;
+  }
+}
+
+
+.DT_Switch_Thumb {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--text-main);
+  border-radius: 9999px;
+  transition: transform 100ms;
+  transform: translateX(2px);
+  will-change: transform;
+
+  &[data-state='checked'] {
+    transform: translateX(20px);
+    background-color: var(--activeText);
+  }
+}

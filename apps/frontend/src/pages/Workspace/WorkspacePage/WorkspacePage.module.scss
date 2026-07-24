@@ -1,0 +1,18 @@
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 100%;
+}
+
+.tab {
+  padding: 8px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+
+  &.active {
+    background-color: var(--hover);
+    border-color: var(--border)
+  }
+}

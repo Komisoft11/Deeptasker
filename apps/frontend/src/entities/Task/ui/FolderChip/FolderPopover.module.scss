@@ -1,0 +1,37 @@
+.trigger {
+  @apply bg-hover w-[170px] p-2;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    border: 1px solid var(--border);
+  }
+}
+
+.dropdown {
+  width: 250px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.item {
+  border-radius: 8px;
+  padding: 8px;
+
+  &:hover:not(.active) {
+    cursor: pointer;
+    background-color: var(--hover);
+  }
+}
+
+.active {
+  background-color: var(--hover);
+}

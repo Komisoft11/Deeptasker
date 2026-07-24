@@ -1,0 +1,37 @@
+
+.container {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-right: 0;
+  justify-content: end;
+}
+
+.control {
+  min-width: 120px !important;
+  max-width: 220px !important;
+  width: 100%;
+  min-height: 32px !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+}
+
+.option {
+  font-size: 12px !important;
+  line-height: 16px !important;
+}
+
+.value__container {
+  padding: 4px 12px !important;
+  height: 32px;
+  width: max-content;
+}
+
+.datePicker {
+  div {
+    max-height: 32px;
+    max-width: 90px;
+    padding: 8px 12px;
+  }
+}
+

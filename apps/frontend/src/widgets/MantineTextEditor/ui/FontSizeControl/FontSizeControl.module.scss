@@ -1,0 +1,25 @@
+.button {
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+
+  &:hover {
+    background-color: var(--hover);
+  }
+}
+
+.input {
+  div {
+    background-color: transparent;
+    border: 1px solid var(--border);
+    padding: 4px 0;
+    width: 32px;
+
+    input {
+      width: 100% !important;
+    }
+  }
+}

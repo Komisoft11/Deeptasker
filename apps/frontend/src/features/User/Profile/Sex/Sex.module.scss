@@ -1,0 +1,13 @@
+.list {
+  @apply w-[564px] flex gap-2;
+}
+
+.label {
+  @apply h-12 rounded-xl w-full;
+}
+
+@media (max-width: 1919px) {
+  .label {
+    height: max-content;
+  }
+}

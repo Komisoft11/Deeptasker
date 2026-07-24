@@ -1,0 +1,19 @@
+{
+  "firstName": "Enter first name",
+  "lastName": "Enter last name",
+  "middleName": "Enter middle name",
+  "email": "Enter email",
+  "enterCommentText": "Enter comment text",
+  "enterTaskDescription": "Enter task description",
+  "password": "Enter password",
+  "username": "Enter new username",
+  "currentPassword": "Enter current password",
+  "newPassword": "Enter new password",
+  "repeatNewPassword": "Repeat new password",
+  "repeatPassword": "Repeat password",
+  "accountPassword": "Enter your account password",
+  "phone": "Enter your phone number",
+  "aboutMe": "Here you can write a few words about yourself",
+  "projectReports": "Project reports will appear here.",
+  "timeTrackingHistory": "Time tracking history for this task will appear here."
+}

@@ -1,0 +1,21 @@
+.label {
+  @apply h-10 rounded-lg w-max text-center
+  flex items-center justify-center px-3;
+  background: var(--objects);
+  transition: background 0.3s;
+
+  &:hover:not([data-state='checked']) {
+    cursor: pointer;
+    background-color: var(--hover);
+
+    label {
+      cursor: pointer;
+    }
+  }
+
+
+  &[data-state='checked'] {
+    background: var(--accent);
+    color: #EFEFEF
+  }
+}

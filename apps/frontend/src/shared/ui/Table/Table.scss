@@ -1,0 +1,90 @@
+/* Base Table Styles */
+.DT_Table {
+  max-width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.DT_TableHead {
+  text-align: left;
+  pointer-events: none;
+
+  div {
+    color: var(--text-second);
+  }
+
+}
+
+.DT_TableBody {
+  div {
+    color: var(--text-main);
+  }
+}
+
+.DT_TableRow {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr)) 210px;
+  gap: 4px;
+  border-top: 1px solid var(--hover);
+  transform: scale3d(var(--scale-x, 1), var(--scale-y, 1), 1);
+  transition: background-color 0.3s ease;
+  align-items: center;
+
+  &-dragOverlay {
+    position: relative;
+    display: inline-block;
+    z-index: 9999;
+    background-color: var(--objects);
+  }
+
+  &:first-child:not([aria-roledescription="sortable"]) {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid var(--hover);
+  }
+}
+
+.DT_TableRow:hover {
+  width: 100%;
+  background-color: var(--hover);
+  border-color: transparent;
+  border-radius: 8px;
+
+  + .DT_TableRow {
+    border-top-color: transparent;
+  }
+}
+
+.DT_TableResizer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: col-resize;
+  user-select: none;
+  touch-action: none;
+
+  &-resize {
+    background: blue;
+    opacity: 1;
+  }
+}
+
+.DT_TableCell {
+  display: flex;
+  padding: 12px;
+}
+
+
+.DT_TableCell:focus {
+  outline: none;
+  background-color: var(--hover);
+}

@@ -1,0 +1,10 @@
+[data-radix-popper-content-wrapper] {
+  z-index: 11 !important;
+}
+
+.peopleContainer {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  flex: 1 0 0;
+}

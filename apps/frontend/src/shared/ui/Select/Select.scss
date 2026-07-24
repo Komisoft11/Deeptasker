@@ -1,0 +1,70 @@
+.DT_Select_Trigger {
+  @apply flex items-center gap-2 px-3 py-2;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+
+  &[data-disabled] {
+    @apply select-none;
+  }
+
+
+  &:hover:not([data-disabled]) {
+    background-color: var(--hover);
+  }
+}
+
+.DT_Select_Content {
+  background: var(--objects);
+  border: 1px solid var(--hover);
+  padding: 4px;
+  border-radius: 8px;
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  max-height: 200px;
+
+  &[data-state='open'] {
+    animation-name: slideDown;
+  }
+
+  &[data-state='closed'] {
+    animation-name: slideUp;
+  }
+}
+
+.DT_Select_Item {
+  border-radius: 8px;
+  @apply flex justify-between px-3 py-2 select-none;
+
+  &:hover {
+    background-color: var(--hover);
+    cursor: pointer;
+  }
+
+  &[data-state='checked'] {
+    background-color: var(--hover);
+  }
+}
+
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

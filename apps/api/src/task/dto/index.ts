@@ -1,0 +1,22 @@
+// RESPONSE
+export { FinishTaskResponse } from './response/finish-task.dto'
+export { ExtendedTaskResponse } from './response/extended-task.dto'
+export { TagResponse } from './response/tag.dto'
+export { TaskResponse } from './response/task.dto'
+export { TaskCommentResponse } from './response/task-comment.dto'
+export { TaskCommentReactionResponse } from './response/task-comment-reaction.dto'
+export { TaskHistoryResponse } from './response/task-history.dto'
+export { TaskRoleResponse } from './response/task-role.dto'
+export { TaskShortResponse } from './response/task-short.dto'
+export { TaskUserResponse } from './response/task-user.dto'
+export { TrackingTaskResponse } from './response/tracking-task.dto'
+export { UploadedFileResponse } from './response/uploaded-file.dto'
+export { UpdateTasksStatusResponse } from './response/update-tasks-status.dto'
+export { RemoveExecutorResponse } from './response/remove-executor.dto'
+
+// REQUEST
+export { CreateTaskRequest } from './request/create-task.dto'
+export { DuplicationTasksRequest } from './request/duplicate-tasks.dto'
+export { GenerateTitleRequest } from './request/generate-title.dto'
+export { UpdateTaskRequest } from './request/update-task.dto'
+export { UpdateTasksStatusRequest } from './request/update-tasks-status.dto'

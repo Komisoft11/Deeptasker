@@ -1,0 +1,29 @@
+.status {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.trigger {
+  width: 100%;
+  padding: 8px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+
+  > p {
+    width: 85px;
+    font-weight: 400;
+    color: var(--text-second);
+  }
+
+  > svg {
+    transition: all .3s ease;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

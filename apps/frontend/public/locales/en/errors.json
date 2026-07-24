@@ -1,0 +1,74 @@
+{
+  "unknown": "Unknown error",
+  "tryAgainOrSupport": "Please try again or contact support",
+  "email": "Invalid email",
+  "user": {
+    "email": "Invalid email",
+    "password": "Invalid password",
+    "invalidPassword": "Incorrect password",
+    "exist": "The user with this email already exists",
+    "emptyUsername": "Username cannot be empty",
+    "minUsernameLength": "Username must be at least 3 characters long",
+    "usernamePattern": "Use only Latin letters, digits, dots and underscores",
+    "usernameTaken": "This username already exists",
+    "passwordUppercase": "Password must contain at least one uppercase letter",
+    "repeatPassword": "Repeat new password",
+    "passwordsMismatch": "Passwords do not match",
+    "minPasswordLength": "Minimum length is 6 characters",
+    "passwordSame": "Password cannot be the same"
+  },
+  "project": {
+    "noAccess": "You don't not have access",
+    "create": "Failed to create the project {{title}}",
+    "delete": "Failed to delete the project {{title}}",
+    "update": "Failed to update the project {{title}}"
+  },
+  "task": {
+    "canNotChangeStatus": "You can't change status of this task",
+    "create": "Error creating task",
+    "taskTitleRequired": "Enter a task title"
+  },
+  "invalidEmail": "Please enter a valid email address",
+  "requiredEmail": "E-mail is required",
+  "requiredPassword": "Password is required",
+  "minNameLength": "First name must contain at least 1 character",
+  "requiredFirstName": "Please enter your first name",
+  "minLastNameLength": "Last name must contain at least 1 character",
+  "requiredLastName": "Please enter your last name",
+  "newPassword": "New password",
+  "enterFullNumber": "Enter your full phone number",
+  "clipboardApiNotSupported": "Clipboard API is not supported by your browser",
+  "fileMaxSize": "Some files exceed 10 MB and were not uploaded",
+  "folder": {
+    "create": "Error creating folder {{title}}",
+    "update": "Error updating folder",
+    "delete": "Error deleting folder {{title}}"
+  },
+  "report": {
+    "create": {
+      "title": "Failed to create the report {{title}}",
+      "text": "Please review your input and try again"
+    },
+    "generated": "Failed to generate report {{title}}",
+    "deleted": "Failed to delete report {{title}}"
+  },
+  "workspace": {
+    "create": "Failed to create the workspace {{title}}",
+    "delete": "Failed to delete the workspace {{title}}",
+    "update": "Failed to update the workspace {{title}}"
+  },
+  "submitError": "Error submitting the form",
+  "kanban": {
+    "duplicateError": {
+      "title": "Failed to duplicate status"
+    },
+    "deleteError": {
+      "title": "Failed to delete status",
+      "description": "Could not delete status {{name}}"
+    }
+  },
+  "clipboard": {
+    "notSupported": "Clipboard API is not supported in your browser",
+    "copyError": "Failed to copy"
+  }
+}

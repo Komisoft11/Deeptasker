@@ -1,0 +1,54 @@
+.list {
+  max-height: 640px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tableRow {
+  @apply py-3;
+  grid-template-columns: 1fr 1fr 1fr 210px;
+}
+
+.iconWrap {
+  padding: 8px;
+  border-radius: 8px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--hover);
+  }
+}
+
+.autocompleteControl {
+  border: 1px solid var(--accent) !important;
+  background-color: transparent !important;
+  max-width: 100% !important;
+
+  &:hover {
+    border-color: var(--accent) !important;
+  }
+}
+
+.autocompleteContainer {
+  padding: 12px !important;
+  margin: 0 !important;
+}
+
+.autocompleteValueContainer {
+  padding: 20px 0 !important;
+}
+
+.menu {
+  padding: 16px !important;
+  border-radius: 8px !important;
+  background-color: var(--hover) !important;
+  border: 1px solid var(--objects) !important;
+  margin: 8px 0 0 0 !important;
+  max-width: 50% !important;
+}
+
+.menuList {
+  padding: 0 !important;
+}

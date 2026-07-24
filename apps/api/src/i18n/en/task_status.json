@@ -1,0 +1,9 @@
+{
+  "open": "Open",
+  "executed": "Executed",
+  "process": "In process",
+  "cannot_find_status_in_project": "Cannot find status in project {{projectId}}",
+  "default_status_cannot_be_deleted": "Default status {{statusName}} cannot be deleted",
+  "could_not_find_default_status_open_for_project": "Could not find default status OPEN for project {{projectId}}",
+  "status_not_found_for_project": "Status {{statusId}} not found for project {{projectId}}"
+}

@@ -1,0 +1,37 @@
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--hover);
+  padding-bottom: 24px;
+  align-items: start;
+}
+
+.expanded {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  overflow: hidden;
+  min-height: 48px;
+  max-height: 48px;
+}
+
+
+.all {
+  padding: 12px 24px;
+  white-space: nowrap;
+}
+
+.button {
+  padding: 12px;
+  height: 48px;
+  justify-content: flex-start;
+  width: max-content;
+}

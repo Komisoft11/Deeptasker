@@ -1,0 +1,27 @@
+.item {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px 4px 0;
+  border-radius: 8px;
+  width: 100%;
+  border: 1px solid transparent;
+  
+  button {
+    justify-content: start !important;
+  }
+
+  &:hover:not(.active) {
+    background-color: var(--hover);
+  }
+}
+
+.active {
+  background-color: var(--hover);
+  border-color: var(--border)
+}
+
+
+.iconWrap {
+  padding: 8px;
+  position: relative;
+}

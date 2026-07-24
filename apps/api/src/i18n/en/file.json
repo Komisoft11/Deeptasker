@@ -1,0 +1,5 @@
+{
+  "file_not_found": "File not found",
+  "file_for_task_not_found": "File for task not found",
+  "file_not_found_in_object_storage": "File not found in object storage"
+}

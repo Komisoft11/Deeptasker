@@ -1,0 +1,88 @@
+.tagDetails {
+  width: 100%;
+}
+
+.tagColor {
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  background-color: #8F68FF;
+  flex-shrink: 0;
+
+  &:hover:not(.readonly) {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
+
+.tagName {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.button {
+  padding: 8px;
+}
+
+.icon {
+  height: 16px;
+  width: 16px;
+  stroke: var(--system-red);
+}
+
+.inputContainer {
+  padding: 16px 12px;
+  border-bottom: 1px solid var(--hover);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+
+}
+
+.editMode {
+  border-color: var(--accent);
+}
+
+.input {
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  max-width: 350px;
+
+
+  .readonly {
+    cursor: text;
+  }
+
+  &:hover:not(.readonly) {
+    background-color: var(--hover);
+  }
+
+  div {
+    background-color: transparent;
+    border: none;
+    padding: 0 8px;
+    width: 100%;
+  }
+
+}
+
+.colorContainer {
+  justify-content: normal !important;
+  max-width: 232px;
+  padding: 0;
+}
+
+.errorText {
+  color: var(--system-red);
+  width: 100%;
+  text-align: center;
+  margin-top: 12px;
+}

@@ -1,0 +1,138 @@
+{
+  "feedback": {
+    "title": "Share feedback",
+    "description": "Tell us what you like about the product and what could be improved.",
+    "rating": {
+      "label": "How would you rate your experience with the product?",
+      "options": {
+        "1": "Very bad",
+        "2": "Bad",
+        "3": "Okay",
+        "4": "Good",
+        "5": "Excellent"
+      }
+    },
+
+    "goal": {
+      "label": "How do you use the product?",
+      "placeholder": "Specify your option",
+      "options": {
+        "personal": "Personal use",
+        "startup": "Use in a startup / small team",
+        "mediumTeam": "Use in a medium-sized team (5–20 people)",
+        "largeTeam": "Use in a large team / organization (20+ people)",
+        "education": "Educational / learning purposes",
+        "other": "Other"
+      }
+    },
+
+    "liked": {
+      "label": "What did you like the most?",
+      "placeholder": "For example: intuitive interface and quick access to tasks"
+    },
+
+    "frustrating": {
+      "label": "What was confusing or frustrating?",
+      "placeholder": "For example: difficult to move tasks between columns"
+    },
+
+    "missingFeature": {
+      "label": "What feature would make the product more useful for you?",
+      "placeholder": "For example: bulk editing of tasks"
+    },
+
+    "usability": {
+      "label": "How easy was the product to use?",
+      "options": {
+        "veryEasy": "Very easy",
+        "easy": "Easy",
+        "neutral": "Neutral",
+        "difficult": "Difficult",
+        "veryDifficult": "Very difficult"
+      }
+    },
+
+    "extra": {
+      "label": "Anything else you'd like to share?",
+      "placeholder": "Any additional feedback or suggestions about the project?"
+    },
+
+    "submit": "Submit feedback",
+    "success": "Thank you! Your feedback helps us improve the product.",
+
+    "errors": {
+      "rating": "Please select a rating",
+      "liked": "Tell us what you liked",
+      "frustrating": "Describe any issues you faced",
+      "missingFeature": "What features are missing?",
+      "usability": "Please rate usability",
+      "goal": "What is your goal of using the service?",
+      "extra": "You can add any additional comments"
+    },
+
+    "toast": {
+      "title": "Share your feedback about the product",
+      "text": "Leave feedback",
+      "snooze": "Later"
+    }
+  },
+
+  "bugReport": {
+    "title": "Report a bug",
+    "description": "If something is not working correctly, please tell us so we can fix it faster.",
+
+    "titleField": {
+      "label": "Bug title",
+      "placeholder": "Example: Cannot move task between columns"
+    },
+
+    "location": {
+      "label": "Where did the issue occur?",
+      "placeholder": "Specify your option",
+      "options": {
+        "auth": "Registration / Login",
+        "dashboard": "Dashboard",
+        "taskCreation": "Task creation",
+        "taskEditing": "Task editing",
+        "board": "Task board (drag & drop)",
+        "notifications": "Notifications",
+        "settings": "Profile / Settings",
+        "other": "Other"
+      }
+    },
+
+    "expected": {
+      "label": "What should have happened?",
+      "placeholder": "Describe the expected result. For example: the task should move to another column."
+    },
+
+    "actual": {
+      "label": "What actually happened?",
+      "placeholder": "Describe the actual result. For example: the task didn't move and an error appeared."
+    },
+
+    "screenshot": {
+      "label": "Attach screenshot",
+      "fileUpload": {
+        "clickToUpload": "Click to upload",
+        "fileFormat": "JPG or PNG (max 10 MB)"
+      }
+    },
+
+    "email": {
+      "label": "Email for follow-up (optional)"
+    },
+
+    "submit": "Submit bug report",
+    "success": "Thank you! We'll look into the issue as soon as possible.",
+    "errors": {
+      "titleField": {
+        "required": "Enter a title",
+        "max": "Maximum 100 characters"
+      },
+      "location": "Select a location or enter your own",
+      "expected": "Describe the expected result",
+      "actual": "Describe the actual result"
+    }
+  }
+}

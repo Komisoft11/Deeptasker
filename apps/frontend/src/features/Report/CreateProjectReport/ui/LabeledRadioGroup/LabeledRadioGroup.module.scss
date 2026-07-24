@@ -1,0 +1,21 @@
+.label {
+  @apply h-10 rounded-lg w-[64px] text-center
+  flex items-center justify-center;
+  background: var(--hover);
+  transition: background 0.3s;
+
+  &:hover:not([data-state='checked']) {
+    cursor: pointer;
+    opacity: 0.7;
+
+    label {
+      cursor: pointer;
+    }
+  }
+
+
+  &[data-state='checked'] {
+    background: var(--accent);
+    color: var(--activeText)
+  }
+}

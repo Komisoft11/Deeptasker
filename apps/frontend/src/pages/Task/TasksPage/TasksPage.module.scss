@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.link {
+  padding: 12px;
+  display: flex;
+  gap: 4px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: var(--hover);
+  }
+}
+

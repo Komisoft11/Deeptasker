@@ -1,0 +1,35 @@
+.dropdown {
+  padding: 4px;
+  width: 240px;
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+
+  svg path {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.padding {
+  margin-right: 0;
+  padding: 8px 12px;
+}
+
+.containerItem {
+  border-radius: 8px;
+}
+
+.itemText {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.dropdownBody {
+  @apply z-portal;
+  padding: 0 !important;
+  top: 4px !important;
+}
+
+
+

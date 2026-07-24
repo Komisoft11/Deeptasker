@@ -1,0 +1,15 @@
+
+.breadcrumb {
+  @apply flex items-center gap-1;
+  color: var(--text-second);
+  svg path  {
+    fill: var(--text-second);
+  }
+}
+
+.lastBreadcrumb {
+  color: var(--text-main);
+  svg path  {
+    fill: var(--text-main);
+  }
+}

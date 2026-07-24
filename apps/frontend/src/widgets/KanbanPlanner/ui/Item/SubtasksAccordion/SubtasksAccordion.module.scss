@@ -1,0 +1,32 @@
+.trigger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 8px;
+  width: 100%;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--hover);
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtaskItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 8px 8px 0;
+  border-radius: 8px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--hover);
+  }
+}

@@ -1,0 +1,44 @@
+.form {
+  min-width: 368px;
+
+  & > .input:not(:last-child) {
+    @apply mb-3;
+  }
+
+  .password {
+    @apply relative;
+    & > img {
+      @apply absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer;
+    }
+  }
+}
+
+
+.container {
+  @apply p-6 rounded-[.625rem] bg-white shadow-xs border border-solid border-[#e0e0e0];
+  h2 {
+    @apply font-semibold text-center mb-5;
+  }
+
+  input {
+    @apply py-3 px-4;
+    &:focus + label div, &:not([value=""]) + label div {
+      @apply text-sm  px-[2px];
+      transform: translate(0, -115%) !important;
+    }
+  }
+
+  & > div {
+    @apply mt-5 flex justify-center;
+    & > button {
+      @apply ml-1 ;
+    }
+  }
+}
+
+.userinfo {
+  @apply flex mb-3;
+  & > div:nth-child(1) {
+    @apply mr-4;
+  }
+}

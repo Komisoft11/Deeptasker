@@ -1,0 +1,20 @@
+{
+  "trailingComma": "none",
+  "tabWidth": 2,
+  "useTabs": false,
+  "jsxSingleQuote": true,
+  "semi": false,
+  "printWidth": 80,
+  "singleQuote": true,
+  "importOrder": [
+    "<THIRD_PARTY_MODULES>",
+    "^@/infrastructure/(.*)$",
+    "^@/notification/(.*)$",
+    "^@/email/(.*)$",
+    "^@/config/(.*)$",
+    "^../(.*)",
+    "^./(.*)"
+  ],
+  "importOrderSeparation": false,
+  "importOrderSortSpecifiers": true
+}

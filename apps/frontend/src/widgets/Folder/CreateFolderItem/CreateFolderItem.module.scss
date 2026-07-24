@@ -1,0 +1,24 @@
+.button {
+  padding: 12px;
+  height: 48px;
+  justify-content: flex-start;
+  width: max-content;
+}
+
+.create {
+  padding: 12px;
+  width: 180px;
+  height: 48px;
+  display: flex;
+  gap: 8px;
+  background-color: var(--hover);
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  align-items: center;
+}
+
+.input {
+  background-color: transparent;
+  max-width: calc(100% - 24px - 8px);
+}

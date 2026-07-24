@@ -1,0 +1,16 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: hidden;
+}
+
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  overflow: auto;
+  height: 100dvh;
+}

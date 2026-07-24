@@ -1,0 +1,25 @@
+{
+  "trailingComma": "none",
+  "tabWidth": 2,
+  "useTabs": false,
+  "jsxSingleQuote": true,
+  "semi": false,
+  "printWidth": 80,
+  "singleQuote": true,
+  "importOrder": [
+    "<THIRD_PARTY_MODULES>",
+    "^@/app/(.*)$",
+    "^@/pages/(.*)$",
+    "^@/widgets/(.*)$",
+    "^@/features/(.*)$",
+    "^@/entities/(.*)$",
+    "^@/shared/(.*)$",
+    "^@/ui/(.*)$",
+    "^@/assets/(.*)$",
+    "^../(.*)",
+    "^./(.*)",
+    "(.scss)$"
+  ],
+  "importOrderSeparation": false,
+  "importOrderSortSpecifiers": true
+}

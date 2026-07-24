@@ -1,0 +1,31 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item {
+  padding: 8px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 8px;
+  border-radius: 8px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--hover);
+  }
+}
+
+.item[aria-disabled="true"] {
+  opacity: 0.7;
+}
+
+.delete {
+  color: var(--system-red);
+
+  svg path {
+    fill: var(--system-red);
+  }
+}

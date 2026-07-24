@@ -1,0 +1,21 @@
+.title {
+  @apply text-sm font-semibold px-2 mb-2;
+}
+
+.bodyDropdown {
+  @apply right-0 py-2 z-4;
+  & > div:not(:last-child) {
+    @apply mb-1;
+  }
+}
+
+.notification {
+  @apply flex-center-between;
+  & > span {
+    @apply mr-1;
+  }
+}
+
+.item {
+  @apply px-3 py-2;
+}

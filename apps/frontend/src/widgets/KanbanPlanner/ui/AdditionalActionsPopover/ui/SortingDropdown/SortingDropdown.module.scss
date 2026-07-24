@@ -1,0 +1,34 @@
+.trigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 8px 4px 0;
+
+}
+
+
+.item {
+  @extend .trigger;
+  padding: 4px 0 4px 12px;
+  border-radius: 8px;
+}
+
+.active {
+  .icons {
+    opacity: 1;
+  }
+}
+
+.hovered {
+  &:hover {
+    .icons {
+      opacity: 1;
+    }
+  }
+}
+
+.icons {
+  display: flex;
+  gap: 4px;
+  opacity: 0;
+}

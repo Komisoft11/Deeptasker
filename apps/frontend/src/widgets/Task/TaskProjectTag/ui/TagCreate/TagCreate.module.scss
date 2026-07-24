@@ -1,0 +1,17 @@
+.input {
+  div {
+    background-color: transparent;
+    border-bottom: 1px solid var(--hover);
+    border-radius: 0;
+
+    &:focus-within {
+      outline: none;
+    }
+  }
+}
+
+.errors {
+  div {
+    border-bottom: 1px solid var(--system-red);
+  }
+}

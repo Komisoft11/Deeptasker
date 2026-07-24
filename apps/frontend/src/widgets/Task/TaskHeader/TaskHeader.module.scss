@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.menu {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 200px;
+}
+
+.item {
+  padding: 8px !important;
+  height: fit-content;
+  display: flex;
+  gap: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 16px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--hover);
+  }
+}
+
+.item[aria-disabled="true"] {
+  opacity: 0.7;
+}
+
+.counters {
+  display: flex;
+  gap: 4px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: var(--text-second);
+
+  p {
+    width: max-content;
+  }
+}
+
+.button {
+  padding: 10px;
+  transition: all .3s ease;
+  border-color: transparent;
+  gap: 0 !important;
+  background-color: transparent !important;
+}
+
+.button:hover {
+  background-color: var(--objects) !important;
+}

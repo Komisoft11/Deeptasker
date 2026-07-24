@@ -1,0 +1,8 @@
+{
+  "not_found": "User not found",
+  "forbidden": "You do not have access to this user",
+  "exists": "User already exists",
+  "account_is_not_activated": "Account is not activated",
+  "incorrect_email_or_password": "Incorrect email or password",
+  "account_already_activated": "Account already activated"
+}

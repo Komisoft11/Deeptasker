@@ -1,0 +1,16 @@
+{
+  "creation": {
+    "project": {
+      "title": "Create Project",
+      "description": "Click to enter a name and start a new project."
+    },
+    "task": {
+      "title": "Create Task",
+      "description": "Enter a name and press Enter to create. Press Shift + Enter to create and open right away."
+    },
+    "folder": {
+      "title": "Create Folder",
+      "description": "Enter a name and press Enter to create a new folder."
+    }
+  }
+}

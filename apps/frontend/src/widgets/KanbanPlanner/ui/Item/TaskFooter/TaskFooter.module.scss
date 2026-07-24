@@ -1,0 +1,10 @@
+.disabled {
+  border: 1px solid var(--hover);
+  background-color: transparent;
+  pointer-events: none;
+
+  &:hover {
+    background-color: transparent !important;
+  }
+}
+

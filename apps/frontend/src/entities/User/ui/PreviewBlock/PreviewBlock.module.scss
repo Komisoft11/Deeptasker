@@ -1,0 +1,15 @@
+.preview {
+  @apply w-[50%] h-screen
+  pt-[120px] pl-[140px]
+  flex flex-col gap-[64px];
+  background-color: var(--hover);
+  border-left: 1px solid var(--border);
+}
+
+.imgContainer {
+  @apply bg-hover w-full h-full
+  rounded-tl-2xl;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

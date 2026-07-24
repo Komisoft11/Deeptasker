@@ -1,0 +1,54 @@
+.DT_Input_Body {
+  @apply flex flex-col gap-1 w-full;
+}
+
+.DT_Input_Container {
+  width: 100%;
+  background-color: var(--hover);
+  padding: 12px;
+  border-radius: 8px;
+  max-height: 40px;
+  border: 1px solid transparent;
+
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+
+  &:focus-within:not(:disabled, &-readonly) {
+    outline: 1px solid var(--accent-60);
+  }
+}
+
+.DT_Input_Input {
+  width: 100%;
+  background-color: transparent;
+
+  &-error {
+    border-color: var(--system-red);
+  }
+
+  &-readonly {
+    border-color: var(--hover);
+    background-color: transparent !important;
+    cursor: not-allowed;
+  }
+
+  &:hover:not(:disabled, &-error, &-readonly ) {
+    border-color: var(--text-second);
+    cursor: text;
+  }
+
+  &:focus:not(:disabled, &-error,  &-readonly) {
+    border-color: var(--text-second);
+  }
+
+  &:disabled {
+    pointer-events: none;
+  }
+
+  &::placeholder {
+    color: var(--text-second);
+  }
+
+}

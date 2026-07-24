@@ -1,0 +1,7 @@
+export const TRANSLATION = 'translation'
+export const ENTITY = 'entity'
+export const GUIDANCE = 'guidance'
+export const PLACEHOLDERS = 'placeholders'
+export const ERRORS = 'errors'
+export const SUCCESS = 'success'
+export const SUPPORT = 'support'

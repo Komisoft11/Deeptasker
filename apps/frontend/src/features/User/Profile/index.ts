@@ -1,0 +1,6 @@
+export { PersonalInfo } from './PersonalInfo/PersonalInfo'
+export { PhoneNumber } from './PhoneNumber/PhoneNumber'
+export { Place } from './Place/Place'
+export { Dob } from './Dob/Dob'
+export { Sex } from './Sex/Sex'
+export { About } from './About/About'

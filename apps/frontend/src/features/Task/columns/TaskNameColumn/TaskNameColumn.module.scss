@@ -1,0 +1,45 @@
+.body {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  height: 100%;
+
+  &:hover:not(.disabled) {
+    cursor: pointer;
+    background-color: var(--hover);
+  }
+}
+
+.executed {
+  opacity: 0.5;
+}
+
+.collapse {
+  padding: 4px;
+  height: 100%;
+  align-self: flex-start;
+}
+
+.titleContainer {
+  width: 100%;
+  max-width: 389px;
+  height: max-content;
+}
+
+.title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  word-break: break-word;
+}
+
+.timeTracker {
+  width: 32px;
+  height: 32px;
+  margin-left: auto;
+  transition: all .4s ease;
+}

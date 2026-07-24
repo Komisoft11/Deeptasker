@@ -1,0 +1,8 @@
+export { TaskHeader } from '@/widgets/Task/TaskHeader/TaskHeader'
+export { ExecuteTask } from '@/widgets/Task/ExecuteTask/ExecuteTask'
+export { SubtaskRowItem } from 'widgets/Task/TaskRow'
+export { TaskTable } from '@/widgets/Task/TaskTable/TaskTable'
+export { TaskProjectTag } from '@/widgets/Task/TaskProjectTag/TaskProjectTag'
+export { TaskNew } from '@/widgets/Task/TaskNew/TaskNew'
+export { TaskStatusSelect } from '@/widgets/Task/TaskStatusSelect/TaskStatusSelect'
+export { TaskPrioritySelect } from '@/widgets/Task/TaskPrioritySelect/TaskPrioritySelect'

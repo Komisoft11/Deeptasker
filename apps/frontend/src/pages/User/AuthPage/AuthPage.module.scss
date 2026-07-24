@@ -1,0 +1,41 @@
+.container {
+  background-color: var(--bg-body);
+  display: flex;
+}
+
+.contentContainer {
+  @apply flex flex-col
+  items-center justify-between
+  w-[50%] h-screen
+  pb-12 pt-12;
+}
+
+.title {
+  color: var(--text-main);
+}
+
+.logo {
+  @apply w-20 h-20;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 10s linear infinite;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

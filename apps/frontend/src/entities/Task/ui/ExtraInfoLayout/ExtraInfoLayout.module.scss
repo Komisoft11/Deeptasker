@@ -1,0 +1,14 @@
+.subtask {
+  @apply flex gap-1 p-2 rounded-[8px] items-center;
+  background-color: var(--hover);
+
+  p {
+    font-size: 14px;
+    line-height: 16px;
+
+  }
+
+  svg path {
+
+  }
+}

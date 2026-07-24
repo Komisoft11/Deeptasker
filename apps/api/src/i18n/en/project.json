@@ -1,0 +1,18 @@
+{
+  "created": "Project created",
+  "slug_exists": "Slug already exists",
+  "title_exist": "Title already exists",
+  "not_found": "Project not found",
+  "forbidden": "No access to project",
+  "not_found_or_no_access": "Project not found or no access to project",
+  "too_many_projects_upgrade_plan": "Too many projects, upgrade plan",
+  "too_many_users_in_project": "Too many users in project, upgrade plan",
+  "you_do_not_have_access_to_project_to_make_it_a_parent": "You do not have access to project {{parentId}} to make it a parent.",
+  "user_is_owner_of_project": "User {{userId}} is owner of project {{projectId}}",
+  "user_is_admin_of_project_workspace": "User is admin of project's workspace {{workspaceId}}",
+  "user_is_not_part_of_project" : "User {{username}} is not part of project {{title}}",
+  "cannot_remove_admin_access_is_owner_of_project": "Cannot remove admin access: {{username}} is owner of project",
+  "user_is_not_admin_of_project": "User {{username}} is not admin of project {{title}}",
+  "project_workspace_does_not_match_requested_workspace": "Project workspace does not match requested workspace",
+  "default_name": "New project"
+}

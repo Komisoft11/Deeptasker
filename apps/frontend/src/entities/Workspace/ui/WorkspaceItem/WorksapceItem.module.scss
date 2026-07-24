@@ -1,0 +1,18 @@
+.container {
+  @apply p-3 w-[312px] flex justify-between items-center;
+}
+
+.item {
+  @apply flex items-center;
+}
+
+.info {
+  @apply flex flex-col ml-3;
+  .title {
+    @apply text-sm;
+  }
+
+  .description {
+    @apply text-sm;
+  }
+}
