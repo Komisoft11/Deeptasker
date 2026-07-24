@@ -1,0 +1,35 @@
+{
+  "name": "deeptasker-monorepo",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "apps:add": "bun run api:add & bun run event-stream:add & bun run notification:add & bun run web:add && wait",
+    "dev": "bun run api:dev & bun run event-stream:dev & bun run notification:dev & bun run web:dev",
+    "preview": "bun run api:preview & bun run event-stream:preview & bun run notification:preview & bun run web:preview",
+
+    "api:add": "cd apps/api && bun install",
+    "event-stream:add": "cd apps/event-stream && bun install",
+    "notification:add": "cd apps/notification && bun install",
+    "web:add": "cd apps/frontend && bun install",
+
+    "api:dev": "cd apps/api && bun run dev",
+    "event-stream:dev": "cd apps/event-stream && bun run dev",
+    "notification:dev": "cd apps/notification && bun run dev",
+    "web:dev": "cd apps/frontend && bun run dev",
+
+    "api:preview": "cd apps/api && bun run build && bun run prod",
+    "event-stream:preview": "cd apps/event-stream && bun run build && bun run prod",
+    "notification:preview": "cd apps/notification && bun run build && bun run prod",
+    "web:preview": "cd apps/frontend && bun run build && bun run preview",
+
+    "docker": "docker compose build --no-cache && docker compose up -d",
+    "migrations": "cd apps/api && bunx mikro-orm migration:up"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,115 @@
+services:
+  minio:
+    build: ./docker/minio
+    container_name: "deeptasker-minio"
+    ports:
+      - "127.0.0.1:39000:9000"
+      - "127.0.0.1:39001:9001"
+    volumes:
+      - minio:/data
+    networks:
+      - deeptasker
+
+  redis:
+    build:
+      context: ./docker/redis
+      dockerfile: Dockerfile
+    container_name: "deeptasker-redis"
+    restart: always
+    ports:
+      - '6379:6379'
+    command: redis-server --save 20 1 --loglevel warning
+    volumes:
+      - redis:/data
+    networks:
+      - deeptasker
+
+  api-db:
+    build:
+      context: ./docker/postgres
+      dockerfile: Dockerfile
+    container_name: "deeptasker-api-db"
+    ports:
+      - "35433:5432"
+    environment:
+      - POSTGRES_DB=deeptasker
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    user: postgres
+    volumes:
+      - pgdata-dt:/var/lib/postgresql/data
+      - pgsql-sock-dt:/var/run/postgresql
+    networks:
+      - deeptasker
+
+  notification-db:
+    build:
+      context: ./docker/postgres
+      dockerfile: Dockerfile
+    container_name: "deeptasker-notification-db"
+    ports:
+      - "35434:5432"
+    environment:
+      - POSTGRES_DB=notification
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    user: postgres
+    volumes:
+      - pgdata-notifications-dt:/var/lib/postgresql/data
+      - pgsql-sock-notifications-dt:/var/run/postgresql
+    networks:
+      - deeptasker
+
+  rabbit:
+    build:
+      context: docker/rabbit
+      dockerfile: Dockerfile
+    container_name: "deeptasker-rabbitmq"
+    ports:
+      # AMQP protocol port
+      - '35672:5672'
+      # HTTP management UI
+      - '31567:15672'
+    networks:
+      - deeptasker
+
+  prometheus:
+    build:
+      context: docker/prometheus
+      dockerfile: Dockerfile
+    container_name: "deeptasker-prometheus"
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - deeptasker
+
+  grafana:
+    build:
+      context: docker/grafana
+      dockerfile: Dockerfile
+    container_name: "deeptasker-grafana"
+    environment:
+      GRAFANA_PASSWORD: password
+    ports:
+      - "3030:3000"
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+    networks:
+      - deeptasker
+
+volumes:
+  pgdata-dt:
+  pgsql-sock-dt:
+  pgdata-notifications-dt:
+  pgsql-sock-notifications-dt:
+  redis:
+  minio:
+  grafana-data:
+
+networks:
+  deeptasker:
