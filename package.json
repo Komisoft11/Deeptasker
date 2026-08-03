@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "apps:add": "bun run api:add & bun run event-stream:add & bun run notification:add & bun run web:add && wait",
+    "apps:add": "bun install & bun run api:add & bun run event-stream:add & bun run notification:add & bun run web:add && wait",
     "dev": "bun run api:dev & bun run event-stream:dev & bun run notification:dev & bun run web:dev",
     "preview": "bun run api:preview & bun run event-stream:preview & bun run notification:preview & bun run web:preview",
     "api:add": "cd apps/api && bun install",
@@ -20,7 +20,9 @@
     "notification:preview": "cd apps/notification && bun run build && bun run prod",
     "web:preview": "cd apps/frontend && bun run build && bun run preview",
     "docker": "docker compose build --no-cache && docker compose up -d",
-    "migrations": "cd apps/api && bunx mikro-orm migration:up"
+    "migrations:api": "cd apps/api && bunx mikro-orm migration:up",
+    "migrations:notification": "cd apps/notification && bunx prisma generate && bunx prisma migrate dev --name init",
+    "migrations": "bun run migrations:api & bun run migrations:notification"
   },
   "devDependencies": {
     "@types/bun": "latest"

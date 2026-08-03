@@ -170,7 +170,7 @@ export const SignUpForm = () => {
           />
 
           <Button
-            className={'w-full'}
+            className={'w-full body-16'}
             type={'submit'}
             styleButton={'filled'}
             disabled={isButtonDisabled}

@@ -114,7 +114,7 @@ export const SignInForm = () => {
         <div className={'flex flex-col gap-2'}>
           <Button
             type={'submit'}
-            className={'w-full'}
+            className={'w-full body-16'}
             styleButton={'filled'}
             disabled={!form.formState.isValid}
           >
