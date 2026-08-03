@@ -13,7 +13,7 @@ export class EventStreamService {
   public async sendEvent(event: EventStreamDto) {
     try {
       this.rabbitConnection.publish(
-        this.configService.get('RABBIT_EVENTS_EXCHANGE') || 'events',
+        this.configService.get('RABBITMQ_EVENTS_EXCHANGE') || 'events',
         '',
         event
       )

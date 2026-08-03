@@ -16,7 +16,7 @@ export class ConsumerController {
 
   // TODO add logging of validation errors, exceptionFactory may not work
   @RabbitSubscribe({
-    exchange: process.env.RABBIT_EVENTS_EXCHANGE ?? 'events',
+    exchange: process.env.RABBITMQ_EVENTS_EXCHANGE ?? 'events',
     queue: getQueueName(),
     routingKey: getQueueName(),
     queueOptions: {
