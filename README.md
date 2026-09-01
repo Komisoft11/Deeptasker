@@ -1,93 +1,321 @@
 # Deeptasker
 
+**Deeptasker** — это open source платформа для управления задачами и совместной работы, предназначенная как для индивидуального использования, так и для команд любого размера.
 
+Проект построен на современной **event-driven архитектуре** с поддержкой **real-time обновлений**, горизонтального масштабирования и самостоятельного развертывания (**self-hosted**).
+  
+---  
 
-## Getting started
+## Возможности
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+### Управление задачами
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+- Создание и организация задач
+- Работа с проектами и рабочими пространствами
+- Назначение исполнителей
+- Приоритеты и сроки выполнения
+- Гибкая система ролей и прав доступа
 
-## Add your files
+### Работа в реальном времени
 
-* [Create](https://docs.gitlab.com/user/project/repository/web_editor/#create-a-file) or [upload](https://docs.gitlab.com/user/project/repository/web_editor/#upload-a-file) files
-* [Add files using the command line](https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository) or push an existing Git repository with the following command:
+- Мгновенное обновление данных через WebSocket
+- Системные уведомления
+- Синхронизация действий между участниками команды
 
-```
-cd existing_repo
-git remote add origin https://gitlab.com/komisoft/deeptasker.git
-git branch -M main
-git push -uf origin main
-```
+### Масштабируемость
 
-## Integrate with your tools
+- Event-driven архитектура
+- Отдельный сервис обработки событий
+- RabbitMQ для обмена сообщениями
+- Redis для кэширования
+- Возможность горизонтального масштабирования компонентов
 
-* [Set up project integrations](https://gitlab.com/komisoft/deeptasker/-/settings/integrations)
+### Self-hosted
 
-## Collaborate with your team
+- Полный контроль над данными
+- Развертывание в собственной инфраструктуре
+- Docker-first подход
+- Возможность адаптации под бизнес-процессы компании
 
-* [Invite team members and collaborators](https://docs.gitlab.com/user/project/members/)
-* [Create a new merge request](https://docs.gitlab.com/user/project/merge_requests/creating_merge_requests/)
-* [Automatically close issues from merge requests](https://docs.gitlab.com/user/project/issues/managing_issues/#closing-issues-automatically)
-* [Enable merge request approvals](https://docs.gitlab.com/user/project/merge_requests/approvals/)
-* [Set auto-merge](https://docs.gitlab.com/user/project/merge_requests/auto_merge/)
+---  
 
-## Test and Deploy
+# Для кого подходит Deeptasker
 
-Use the built-in continuous integration in GitLab.
+- Индивидуальные пользователи
+- Небольшие команды
+- Стартапы
+- Компании любого размера
+- Разработчики, желающие расширять функциональность платформы
 
-* [Get started with GitLab CI/CD](https://docs.gitlab.com/ci/quick_start/)
-* [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/user/application_security/sast/)
-* [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/topics/autodevops/requirements/)
-* [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/user/clusters/agent/)
-* [Set up protected environments](https://docs.gitlab.com/ci/environments/protected_environments/)
+---  
 
-***
+# Архитектура
 
-# Editing this README
+```text  
+Deeptasker  
+│  
+├── Frontend  
+│   └── React  
+│  
+├── Backend API  
+│   └── NestJS  
+│  
+├── Infrastructure  
+│   ├── PostgresSQL  
+│   ├── Redis  
+│   ├── RabbitMQ  
+│   └── MinIO  
+│  
+├── Event Stream  
+│   └── NestJS  
+│  
+├── Notification Service  
+│   └── NestJS 
+│  
+└── Monitoring  
+    ├── Prometheus    └── Grafana  
+```  
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+### Основные компоненты
 
-## Suggestions for a good README
+| Компонент            | Назначение                          |
+| -------------------- | ----------------------------------- |
+| Frontend             | Пользовательский интерфейс          |
+| Backend API          | Основная бизнес-логика              |
+| PostgreSQL           | Основное хранилище данных           |
+| Redis                | Кэширование данных                  |
+| RabbitMQ             | Брокер сообщений (Event Bus)        |
+| Event Stream         | Доставка событий в реальном времени |
+| Notification Service | Хранение и отправка уведомлений     |
+| MinIO                | S3-совместимое файловое хранилище   |
+| Prometheus           | Сбор метрик                         |
+| Grafana              | Мониторинг системы                  |
+  
+---  
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+# Структура проекта
 
-## Name
-Choose a self-explaining name for your project.
+```text  
+deeptasker/  
+│  
+├── apps/  
+│   ├── api/               # Backend API (NestJS)  
+│   ├── event-stream/      # WebSocket Event Service  
+│   ├── frontend/          # React приложение  
+│   └── notification/      # Notification Service  
+│  
+├── docker/                # Docker-конфигурация  
+├── docs/                  # Документация  
+├── grafana/               # Dashboards Grafana  
+│  
+├── docker-compose.yaml  
+├── prometheus.yaml  
+├── package.json  
+└── README.md  
+```  
+  
+---  
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+# Технологический стек
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+## Frontend
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+- React
+- TypeScript
+- MobX
+- React Hook Form
+- Tailwind CSS
+- SCSS
+- Radix UI
+- Feature-Sliced Design (FSD)
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+## Backend
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+- Node.js
+- NestJS
+- Express
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+## Infrastructure
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+- PostgreSQL
+- Redis
+- RabbitMQ
+- MinIO
+- Docker Compose
+- Nginx
+- Prometheus
+- Grafana
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+## Event Stream
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+- Node.js
+- NestJS
+- Express
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+## Notification Service
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+- Node.js
+- NestJS
+- Express
+- React Email
 
-## License
-For open source projects, say how it is licensed.
+---  
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+# Быстрый запуск
+
+## Требования
+
+Перед началом убедитесь, что установлены:
+
+- Node.js
+- Bun
+- Docker
+- Docker Compose v2.0.0+
+
+---  
+
+## 1. Клонирование проекта
+
+```bash  
+git clone git@gitlab.com:komisoft/deeptasker.gitcd deeptasker
+```  
+  
+---  
+
+## 2. Настройка переменных окружения
+
+Каждое приложение использует собственный файл `.env`.
+
+Перед запуском необходимо создать файл `.env` в каждом приложении на основе соответствующего `.env.example`.
+
+```text  
+apps/  
+├── api/  
+│   ├── .env.example  
+│   └── .env  
+│  
+├── frontend/  
+│   ├── .env.example  
+│   └── .env  
+│  
+├── event-stream/  
+│   ├── .env.example  
+│   └── .env  
+│  
+└── notification/  
+    ├── .env.example    
+    └── .env  
+```  
+Описание всех доступных переменных приведено в `ENVIRONMENT_VARIABLES.md`.
+
+## 3. Запуск инфраструктуры
+
+```bash  
+bun run docker
+```  
+
+Будут запущены:
+
+- Redis
+- RabbitMQ
+- MinIO
+- Prometheus
+- Grafana
+- Notification DB
+- Api DB
+
+---  
+## 4. Подготовка приложений
+
+```bash  
+bun run apps:add
+```  
+
+---  
+
+## 5. Выполнение миграций
+
+После запуска инфраструктуры необходимо применить миграции базы данных:
+
+```bash  
+bun run migrations
+```  
+
+---
+
+## 6. Запуск проекта
+
+### Режим разработки
+
+```bash  
+bun run dev
+```  
+
+или
+
+### Preview-сборка
+
+```bash  
+bun run preview
+```  
+  
+---  
+
+# Документация
+
+Подробная документация проекта:
+
+| Документ                   | Описание                       |
+| -------------------------- | ------------------------------ |
+| `ARCHITECTURE.md`          | Архитектура проекта            |
+| `DEVELOPMENT_SETUP.md`     | Подробный локальный запуск     |
+| `ENVIRONMENT_VARIABLES.md` | Переменные окружения           |
+| `CONTRIBUTING.md`          | Руководство для контрибьюторов |
+| `ROADMAP.md`               | План развития проекта          |
+| `CODE_OF_CONDUCT.md`       | Кодекс поведения сообщества    |
+  
+---  
+
+# Дорожная карта
+
+## Уже реализовано
+
+- Event-driven архитектура
+- Управление задачами
+- Проекты и рабочие пространства
+- JWT-аутентификация
+- WebSocket обновления
+- Notification Service
+- RabbitMQ Event Bus
+- Docker Compose
+- Monitoring (Prometheus + Grafana)
+
+## Планируется
+
+- Plugin System
+- Горизонтальное масштабирование WebSocket
+- Улучшение Notification Pipeline
+- Расширенная система ролей и прав
+- Облачная (SaaS) версия платформы
+- Добавление функционала автоматизации рутинных задач пользователя
+
+---  
+
+# Участие в разработке
+
+Мы приветствуем вклад сообщества в развитие Deeptasker.
+
+Перед созданием Merge Request или Pull Request ознакомьтесь с:
+
+- `CONTRIBUTING.md`
+- `CODE_OF_CONDUCT.md`
+
+Если вы хотите предложить новую функциональность или сообщить об ошибке, создайте Issue с подробным описанием.
+  
+---  
+
+# Лицензия
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0.html)
+
+This project is licensed under the GNU Affero General Public License
+version 3 or later (AGPL-3.0-or-later).
