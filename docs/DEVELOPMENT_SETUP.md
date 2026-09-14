@@ -1,10 +1,12 @@
 # Локальная разработка Deeptasker
+
 Этот документ описывает полный процесс запуска Deeptasker в режиме разработки.
 Система состоит из нескольких сервисов, поэтому корректный запуск важен для работы event-driven и real-time частей.
 
 ---
 
 # 1. Требования
+
 Перед запуском убедитесь, что установлено:
 
 - Docker
@@ -16,13 +18,16 @@
     - bun
 
 ---
+
 # 2. Клонирование проекта
 
 ```bash
-git clone git@gitlab.com:komisoft/deeptasker.gitcd deeptasker
+git clone git@gitlab.com:komisoft/deeptasker.git
 cd deeptasker
 ```
+
 ---
+
 # 3. Переменные окружения
 
 Скопируйте пример конфигурации:
@@ -32,6 +37,7 @@ cp .env.example .env
 ```
 
 Заполните переменные согласно:
+
 - ENVIRONMENT_VARIABLES.md
 
 ---
@@ -45,6 +51,7 @@ bun run docker
 ```
 
 Поднимаются:
+
 - PostgreSQL
 - Redis
 - RabbitMQ
@@ -55,14 +62,15 @@ bun run docker
 ---
 
 # 5. Подготовка приложений
+
 ```bash
    bun run apps:add
 ```
 
-
 ---
 
 # 6. Миграции базы данных
+
 Запустите миграции:
 
 ```bash
@@ -72,7 +80,9 @@ bun run migrations
 ---
 
 # 7. Запуск проекта
+
 Режим разработки
+
 ```bash
 bun run dev
 ```   
@@ -80,15 +90,17 @@ bun run dev
 или
 
 Preview-сборка
+
 ```bash
 bun run preview
 ```
 
+Backend:
 
-Backend: 
 ```bash
 
 ```
+
 Frontend:
 
 ```
@@ -96,6 +108,7 @@ http://localhost:5173 (или другой порт Vite)
 ```
 
 WebSocket Event Service:
+
 ```
 ws://localhost:4000
 ```
@@ -103,6 +116,7 @@ ws://localhost:4000
 Notification Service
 
 Функции:
+
 - обработка RabbitMQ событий
 - отправка email уведомлений
 - сохранение уведомлений в БД
@@ -118,6 +132,7 @@ curl http://localhost:5000/health
 ```
 
 ---
+
 ## Проверка WebSocket
 
 Подключение:
@@ -129,6 +144,7 @@ ws://localhost:4000
 ---
 
 ## Проверка RabbitMQ
+
 UI:
 
 ```
@@ -136,6 +152,7 @@ http://localhost:15672
 ```
 
 Login:
+
 - user: deeptasker
 - pass: deeptasker
 
@@ -160,6 +177,7 @@ http://localhost:3001
 # 9. Типичный workflow разработки
 
 ## 1. Backend изменения
+
 - изменить код в `/api`
 - перезапустить backend
 
@@ -168,6 +186,7 @@ http://localhost:3001
 ## 2. Event-driven логика
 
 Любое изменение:
+
 ```text
 Backend → RabbitMQ → (Event Service / Notification Service)
 ```
@@ -175,6 +194,7 @@ Backend → RabbitMQ → (Event Service / Notification Service)
 ---
 
 ## 3. Real-time проверка
+
 - открыть frontend
 - выполнить действие (создание задачи)
 - проверить WebSocket обновление
@@ -182,6 +202,7 @@ Backend → RabbitMQ → (Event Service / Notification Service)
 ---
 
 # 10. Частые проблемы
+
 ## ❌ RabbitMQ не работает
 
 Проверь:
@@ -191,6 +212,7 @@ docker ps
 ```
 
 UI:
+
 ```
 http://localhost:15672
 ```
@@ -200,6 +222,7 @@ http://localhost:15672
 ## ❌ WebSocket не подключается
 
 Проверь:
+
 - Event Service запущен
 - правильный WS URL в frontend env
 
@@ -208,6 +231,7 @@ http://localhost:15672
 ## ❌ Notification не отправляет email
 
 Проверь:
+
 - SMTP настройки
 - лог notification-service
 - очередь RabbitMQ
@@ -241,6 +265,7 @@ RabbitMQ (event bus)
 # 12. Рекомендации по разработке
 
 ## Backend
+
 - stateless API
 - все события через RabbitMQ
 - не писать WebSocket напрямую
@@ -248,19 +273,23 @@ RabbitMQ (event bus)
 ---
 
 ## Event Service
+
 - не содержит бизнес-логики
 - только трансляция событий
 
 ---
 
 ## Notification Service
+
 - хранит данные уведомлений
 - может работать независимо от UI
 
 ---
 
 # 13. Итог
+
 Если всё запущено корректно, у тебя работает:
+
 - REST API
 - real-time обновления через WebSocket
 - event-driven коммуникация через RabbitMQ

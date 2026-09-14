@@ -1,0 +1,7 @@
+allowBuilds:
+  '@nestjs/core': true
+  '@scarf/scarf': false
+  '@squareboat/nest-console': true
+  msgpackr-extract: true
+  protobufjs: true
+  sqlite3: true
